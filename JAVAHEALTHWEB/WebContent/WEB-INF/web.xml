@@ -3,10 +3,25 @@
   <display-name>JAVAHEALTHWEB</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AdministrateurDao</display-name>
+    <servlet-name>AdministrateurDao</servlet-name>
+    <servlet-class>dao.AdministrateurDao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdministrateurDao</servlet-name>
+    <url-pattern>/AdministrateurDao</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContactDao</display-name>
+    <servlet-name>ContactDao</servlet-name>
+    <servlet-class>dao.ContactDao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactDao</servlet-name>
+    <url-pattern>/ContactDao</url-pattern>
+  </servlet-mapping>
 </web-app>
