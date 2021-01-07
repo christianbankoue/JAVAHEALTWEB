@@ -6,123 +6,152 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Hospital Management System</title>
+    <title>Administrateur interface</title>
 
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- template skin -->
-    <link id="t-colors" href="css/default.css" rel="stylesheet">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom"
-    style="background:url('images/bg1.jpg') repeat left top;">
-
-
-    <div id="wrapper">
-
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-
-            <div class="container navigation">
-
-                <div class="navbar-header page-scroll">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="logo"
-                            style="border: 2px solid black; border-width: 6px; background: #dddddd; padding: 10px 40px;border-radius: 25px;"
-                            width="450" height="120" />
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="ViewAPatients.jsp">Patients</a></li>
-                        <li><a href="DoctorsList.jsp">Doctors</a></li>
-                        <li><a href="ViewFeedback.jsp">Feedbacks</a></li>
-                        <li><a href="ViewAppointment.jsp">Appointments</a></li>
-                        <li style='margin-top: 12px;background-color: white;'>
-                            <div class="dropdown">
-                                <button style='background-color:whitesmoke;color:black;'
-                                    class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Add
-                                    <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="AddPatient.jsp">Add Patient</a></li>
-                                    <li><a href="AddDoctor.jsp">Add Doctor</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                </div>
-                <!-- /.navbar-collapse -->
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html"><img src="img/logo.png" width="100%" height="100%"></a>
             </div>
-            <!-- /.container -->
+
+            <ul class="list-unstyled components">
+                <p>Hello Administrator</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Catalogue</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="ViewAPatients.jsp">Liste des médécins</a>
+                        </li>
+                        <li>
+                            <a href="DoctorsList.jsp">Liste des patients</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ViewReports.jsp">Rapport des patients</a>
+                </li>
+                <li>
+                    <a href="ViewAppointment.jsp">Rendez-vous</a>
+                </li>
+                <li>
+                    <a href="About.jsp">À propos de nous</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="index.html">Deconnexion</a>
+                </li>
+            </ul>
         </nav>
 
-        <!-- Section: intro -->
-        <section id="intro" class="intro">
-            <div class="intro-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                                <img src="images/img-1.png" class="img-responsive" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
+        <!-- Page Content  -->
+        <div id="content">
 
-                            <div class="panel-body" style="">
-                                <center><img src="images/admin.jpg" height="130px" width="510px"></center>
-                                <hr>
-                                <center>
-                                    <h6>Admin: Dharmesh Mourya</h6>
-                                </center>
-                                <hr>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
-                                <b>Patient Management</b>
-                                <p>
-                                    Here Admin can View,Add and Remove the already added Patients Details.
-                                    Administrator can also add a new Patient for a particular test
-                                    under this section.
-                                </p>
-                                <b>Doctor Management</b>
-                                <p>
-                                    Here Admin can View,Add and Remove the already added Doctors Details.
-                                    Administrator can also add a new Doctor for a particular test
-                                    under this section.
-                                </p>
-                                <b>Appointment Management</b>
-                                <p>
-                                    Here Admin can View,Add and Remove the already added Appointment Details.
-                                    Administrator can also add a new Appointment for a particular test
-                                    under this section.
-                                </p>
-                                <b>Feedback Management</b>
-                                <p>
-                                    Here Admin can View the already added Feedback Details.
-                                    Administrator can also add a new Feedback for a particular test
-                                    under this section.
-                                </p>
-                                <hr>
-                                <center>
-                                    <a href="Logout.jsp">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                                        href="ViewPaidBills.jsp">View Paid Bills</a>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ViewReports.jsp">View Patient
-                                        Reports</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                                        href="ViewContacts.jsp">View Contacts</a>
-                                </center>
-                            </div>
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
 
-
-
-                        </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="Feedback.jsp">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="DoctorForm.jsp">Medecin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="PatientForm.jsp">Patient</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+            </nav>
 
+            <h2>Gestion des patients</h2>
+            <p>Vous pouvez consulter la liste des patients,
+                ajouter et supprimer les informations relatives a chaque
+                patient. Il a également la possibilite d'ajouter un nouveau
+                patient selon son état de sante dans cette session.</p>
+
+            <div class="line"></div>
+
+            <h2>Gestion des docteurs</h2>
+            <p>Dans cette rubrique, vous pouvez ajouter et
+                supprimer les informations liées a chaque docteur. Dans cette
+                session, l'administrateur peut egalement ajouter un docteur
+                dans un service specifique</p>
+
+            <div class="line"></div>
+
+            <h2>Gestion des prescriptions</h2>
+            <p>Dans cette rubrique, vous pouvez peut consulter la
+                liste des prescriptions fournie par chaque docteur a un patient
+                selon son probleme de santé.</p>
+
+            <div class="line"></div>
+
+            <h2>Compte-Rendu</h2>
+            <p>Ici, vous pouvez consulter la liste des
+                commentaires recue par les differents utilisateurs. Il peut
+                egalement en rajouter ou supprimer.</p>
+            <hr>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
