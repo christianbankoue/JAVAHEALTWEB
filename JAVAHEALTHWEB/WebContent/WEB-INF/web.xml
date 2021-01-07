@@ -24,4 +24,14 @@
     <servlet-name>ContactDao</servlet-name>
     <url-pattern>/ContactDao</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DocteurDao</display-name>
+    <servlet-name>DocteurDao</servlet-name>
+    <servlet-class>dao.DocteurDao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DocteurDao</servlet-name>
+    <url-pattern>/DocteurDao</url-pattern>
+  </servlet-mapping>
 </web-app>

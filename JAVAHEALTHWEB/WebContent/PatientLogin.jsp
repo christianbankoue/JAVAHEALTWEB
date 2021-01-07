@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 
@@ -13,6 +15,7 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style2.css">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -63,7 +66,7 @@
                                 <a class="nav-link" href="Services.jsp">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="About.jsp">Ã€ propos de Nous</a>
+                                <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
@@ -73,43 +76,52 @@
                     </div>
                 </div>
             </nav>
-
-            <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-f879">
-                <div class="u-clearfix u-sheet u-sheet-1">
-                    <div class="u-expanded-width u-list u-repeater u-list-1">
-                        <a href="AdminForm.jsp" class="">
-                            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-                                <div class="u-container-layout u-similar-container u-container-layout-1">
-                                    <img alt="" class="u-expanded-width u-image u-image-default u-image-1"
-                                        src="img/admin.png" data-image-width="360" data-image-height="360">
-                                    <h5 class="u-text u-text-1">Administrateur</h5>
-                                </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half -->
+            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+    
+    
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5">
+    
+                    <!-- Demo content-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3>Doctor Login</h3>
+                                <form action="PatientDao" method="post" role="form">
+                                    <div class="form-group mb-3">
+                                        <input id="inputEmail first_name" type="text" name="Patient_name" placeholder="Patient Name" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    
+                                    <div class="form-group mb-3">
+                                        <input id="inputEmail first_name" type="text" name="pid" placeholder="Patient ID" required="" autofocus="" title="Enter your Patient ID" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    
+                                    <div class="form-group mb-3">
+                                        <input id="inputPassword last_name" type="password" name="Password" placeholder="Password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Password should contain at least 1 Uppercase ,1 Lowercase and digit and minimum of 6 character." class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                                        <label for="customCheck1" class="custom-control-label">Remember password</label>
+                                    </div>
+                                    <button type="submit" value="Submit" class="btn btn-primary btn-skin btn-lg btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
+                                </form>
+                                <center><a href="ForgotPassword.jsp">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="PatientForm.jsp">Sign Up Here</a></center>
                             </div>
-                        </a>
-                        <a href="DoctorLogin.jsp" class="">
-                            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-                                <div class="u-container-layout u-similar-container u-container-layout-2">
-                                    <img alt="" class="u-expanded-width u-image u-image-default u-image-2"
-                                        data-image-width="225" data-image-height="225" src="img/doctor.jfif">
-                                    <h5 class="u-text u-text-2">Medecin</h5>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="PatientLogin.jsp" class="">
-                            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-                                <div class="u-container-layout u-similar-container u-container-layout-3">
-                                    <img alt="" class="u-expanded-width u-image u-image-default u-image-3"
-                                        data-image-width="258" data-image-height="256" src="img/patient.jpg">
-                                    <h5 class="u-text u-text-3">Patient<br>
-                                    </h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </div><!-- End -->
+    
                 </div>
-            </section>
-
+            </div><!-- End -->
+    
         </div>
+    </div>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
