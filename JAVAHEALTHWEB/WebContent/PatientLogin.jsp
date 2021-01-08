@@ -46,10 +46,6 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button> -->
                     <h3>Hospital Management System</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -79,7 +75,7 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             <!-- The image half -->
-            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+            <div class="col-md-6 d-none d-md-flex bg-image bg-imagePatient"></div>
     
     
             <!-- The content half -->
@@ -90,7 +86,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-10 col-xl-7 mx-auto">
-                                <h3>Doctor Login</h3>
+                                <h3>Patient Login</h3>
                                 <form action="PatientDao" method="post" role="form">
                                     <div class="form-group mb-3">
                                         <input id="inputEmail first_name" type="text" name="Patient_name" placeholder="Patient Name" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">

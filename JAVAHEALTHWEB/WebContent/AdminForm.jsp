@@ -79,7 +79,7 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             <!-- The image half -->
-            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+            <div class="col-md-6 d-none d-md-flex bg-image bg-imageAdmin"></div>
     
     
             <!-- The content half -->

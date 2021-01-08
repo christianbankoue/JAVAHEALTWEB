@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -35,7 +35,7 @@
 
             <ul class="list-unstyled components">
                 <p>Hello Administrator</p>
-                <li class="active">
+                <li class="">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">Catalogue</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -100,36 +100,49 @@
                 </div>
             </nav>
 
-            <h2>Gestion des patients</h2>
-            <p>Vous pouvez consulter la liste des patients,
-                ajouter et supprimer les informations relatives a chaque
-                patient. Il a également la possibilite d'ajouter un nouveau
-                patient selon son état de sante dans cette session.</p>
+            <div class="container-fluid">
+                <div class="row no-gutter">
+                    <!-- The image half -->
+                    <div class="col-md-6 d-none d-md-flex bg-image bg-imageAdmin"></div>
 
-            <div class="line"></div>
 
-            <h2>Gestion des docteurs</h2>
-            <p>Dans cette rubrique, vous pouvez ajouter et
-                supprimer les informations liées a chaque docteur. Dans cette
-                session, l'administrateur peut egalement ajouter un docteur
-                dans un service specifique</p>
+                    <!-- The content half -->
+                    <div class="col-md-6 bg-light">
 
-            <div class="line"></div>
+                            <h2>Gestion des patients</h2>
+                            <p>Vous pouvez consulter la liste des patients,
+                                ajouter et supprimer les informations relatives a chaque
+                                patient. Il a également la possibilite d'ajouter un nouveau
+                                patient selon son état de sante dans cette session.</p>
 
-            <h2>Gestion des prescriptions</h2>
-            <p>Dans cette rubrique, vous pouvez peut consulter la
-                liste des prescriptions fournie par chaque docteur a un patient
-                selon son probleme de santé.</p>
+                            <div class="line"></div>
 
-            <div class="line"></div>
+                            <h2>Gestion des docteurs</h2>
+                            <p>Dans cette rubrique, vous pouvez ajouter et
+                                supprimer les informations liées a chaque docteur. Dans cette
+                                session, l'administrateur peut egalement ajouter un docteur
+                                dans un service specifique</p>
 
-            <h2>Compte-Rendu</h2>
-            <p>Ici, vous pouvez consulter la liste des
-                commentaires recue par les differents utilisateurs. Il peut
-                egalement en rajouter ou supprimer.</p>
-            <hr>
+                            <div class="line"></div>
 
-        </div>
+                            <h2>Gestion des prescriptions</h2>
+                            <p>Dans cette rubrique, vous pouvez peut consulter la
+                                liste des prescriptions fournie par chaque docteur a un patient
+                                selon son probleme de santé.</p>
+
+                            <div class="line"></div>
+
+                            <h2>Compte-Rendu</h2>
+                            <p>Ici, vous pouvez consulter la liste des
+                                commentaires recue par les differents utilisateurs. Il peut
+                                egalement en rajouter ou supprimer.</p>
+
+                        </div>
+                    </div><!-- End -->
+
+                </div>
+            </div>
+
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -145,13 +158,7 @@
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
+    <script type="text/javascript" src="sidebar.js"></script>
 </body>
 
 </html>
