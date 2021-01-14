@@ -40,10 +40,10 @@
                         class="dropdown-toggle">Catalogue</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="ViewAPatients.jsp">Liste des médécins</a>
+                            <a href="DoctorsList.jsp">Liste des médécins</a>
                         </li>
                         <li>
-                            <a href="DoctorsList.jsp">Liste des patients</a>
+                            <a href="ViewPatients.jsp">Liste des patients</a>
                         </li>
                     </ul>
                 </li>

@@ -109,8 +109,7 @@
                     	<h4>Create a patient Account</h4>
                     	<br>
                         <div class="row">
-	                    <form action="PatientRegistration.jsp" method="post" name="frm" role="form"
-	                        class="contactForm lead">
+	                    <form action="AddPProcess.jsp" method="post" role="form" class="contactForm lead">
 	                        <div class="row" style="margin-top: 0px;">
 	                            <div class="col-xs-6 col-sm-6 col-md-6" style="margin-top: 0px;">
 	                                <div class="form-group">
@@ -248,12 +247,9 @@
 	
 	                        </div>
 	                        <div class="form-group col-lg-12 mx-auto mb-0">
-	                            <input type="submit" value="Submit" class="btn btn-skin btn-block btn-lg"
+	                            <input type="submit" value="Add" class="btn btn-skin btn-block btn-lg"
 	                                onclick="return check();">
 	                        </div>
-	                               <center>
-	                                    <p>Already Registered?&nbsp;&nbsp;&nbsp;&nbsp;<a href="PatientLogin.jsp">Login Here</a></p>
-	                                </center><hr>
 	
 	                </div>
 	

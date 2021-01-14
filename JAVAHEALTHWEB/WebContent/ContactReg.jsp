@@ -1,4 +1,4 @@
-<%@page import="com.lib.dao.DB"%>
+<%@page import="dao.DB"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
 <%@page import="java.sql.DriverManager"%>
@@ -27,7 +27,7 @@
            //String date=request.getParameter("date");
            
            try{
-           con=DB.getConnection();
+           con=(new DB()).getConnection();
            ps=con.prepareStatement("insert into Table_Contact(Name,Email,Contact,Comment) values (?,?,?,?)");
            ps.setString(1,name);
            ps.setString(2,email);

@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.ResultSet"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,11 +32,30 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
-
+        
+	<style>
+		
+		
+		.table{
+		    background-color: rgb(66, 46, 46);
+		    color: white;
+		    border: red;
+		}
+		
+		.button{
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
-
+	<%!
+		Connection con;
+		PreparedStatement ps;
+		Statement st;
+		ResultSet rs;
+		String name,email,gender,pass,age,Reg_Date,contact,dob,fees,did,degree,address,dept;
+	%>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -87,14 +111,61 @@
                     </div>
                 </div>
             </nav>
-            <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-f879" style="margin-top:300px;">
-                <h1>
-                    Bonjour 
-                    <% String name=(String)
-                        session.getAttribute("dname");out.println("<b>"+name+"</b>");
-                        %> et bienvenue sur votre l'interface
-                </h1>
-            </section>
+            <div class="container-fluid" style="padding:0px;">
+<div class="table-responsive"> 
+<table border="3" class="table table-bordered">
+
+<%
+try
+{
+        String id=(String)session.getAttribute("did");
+        //out.println(id);
+	Class.forName("com.mysql.jdbc.Driver");
+	con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
+	st=con.createStatement(); 
+	rs=st.executeQuery("select * from Table_Doctor where Did='"+id+"'");
+	while(rs.next())
+	{
+		did=rs.getString("Did");
+		name=rs.getString("Dname");
+		email=rs.getString("Email");
+                pass=rs.getString("Pass");
+                gender=rs.getString("Gender");
+                age=rs.getString("Age");
+		degree=rs.getString("Degree");
+		dept=rs.getString("Department");
+                fees=rs.getString("fees");
+		contact=rs.getString("Contact");
+		address=rs.getString("Address");
+		Reg_Date=rs.getString("Reg_Date");
+%>
+	<tr><td class="blod">DID</td> <td><%=id%></td></tr>
+	<tr><td class="blod">Doctor Name</td> <td><%=name%></td></tr>
+	<tr><td class="blod">Email</td> <td><%=email%></td> </tr>
+	<tr><td class="blod">Password</td> <td><%=pass%></td></tr>
+	<tr><td class="blod">Gender</td> <td><%=gender%></td></tr>
+	<tr><td class="blod">Age</td> <td><%=age%></td></tr>
+	<tr><td class="blod">Degree</td> <td><%=degree%></td></tr>
+	<tr><td class="blod">Department</td> <td><%=dept%></td></tr>
+	<tr><td class="blod">Fees</td><td><%=fees%></td></tr>
+	<tr><td class="blod">Contact</td><td><%=contact%></td></tr>   
+	<tr><td class="blod">Address</td><td><%=address%></td></tr>
+	<tr><td class="blod">Registered Date</td><td><%=Reg_Date%></td></tr>
+	
+
+</table>
+</div>
+<div class="button"><button ><a href="EditDoctor.jsp?id=<%=id%>">Edit</a></button>&nbsp;&nbsp;&nbsp;<button ><a href="DeleteDoctor.jsp?id=<%=did%>">Delete</a></button></div>
+
+<%	
+	}
+}
+catch(Exception e)
+{
+	out.println(e);
+}
+%>
+</div>
         </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->

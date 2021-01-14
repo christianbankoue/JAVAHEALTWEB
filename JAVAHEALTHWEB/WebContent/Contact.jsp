@@ -1,10 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@page import="java.sql.Connection"%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="java.sql.ResultSet"%>
 <!DOCTYPE html>
 <html>
 
@@ -32,42 +27,21 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
-    
-    <style type="text/css">    
-        a{
-			text-decoration: none;
-			color:red;
-		}
-		
-		h4 {
-			text-align: center;
-		}
-	</style>	
 
 </head>
 
 <body>
 
-<%!
-            Connection con;
-            Statement st;
-            String name,id,s4,s5,s6,s7,s8,s1,s2;
-            %>
-       <%
-     try
-     {
-         name =(String)session.getAttribute("name");
-         id=(String)session.getAttribute("pid");   
-    Class.forName("com.mysql.jdbc.Driver");
-    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
-    Statement st=con.createStatement();
-    ResultSet rs=st.executeQuery("select Pid,Pname,Department,Dname,Fees,App_Date,App_Time from Table_Appointment");
-    %>
-    <div class="">
+    <div class="wrapper">
         <!-- Sidebar  -->
-        
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html"><img src="img/logo.png" width="100%" height="100%"></a>
+            </div>
+        </nav>
+
         <!-- Page Content  -->
-        <div>
+        <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -105,43 +79,62 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             <!-- The image half -->
-       		
-                <div class="table-responsive"> 
-<table border="3" class="table table-striped">
-<h4>Appointment List</h4>
-<tr>
-    <th>Patient Name</th><th>Patient ID</th><th>Doctor Department</th><th>Doctor Name</th><th>Doctor Fees</th><th>Appointment Date</th><th>Appointment Time</th>
-  </tr>
-    <%
-    while(rs.next())
-    {
-         id=rs.getString("Pid");
-         name=rs.getString("Pname");
-         s4=rs.getString("Department");
-         s5=rs.getString("Dname");
-         s6=rs.getString("Fees");
-         s7=rs.getString("App_Date");
-         s8=rs.getString("App_Time");
-  
-    %>
+            <div class="col-md-6 d-none d-md-flex bg-image bg-imageDoctor"></div>
     
-    <tr><td><%=name%></td><td><%=id%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%></td><td><%=s7%></td><td><%=s8%></td></tr>  
-    <%
-    }  
+    
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="panel-body" style="">
+                                    <center><h3>Contact Us</h3></center><hr>
 
-      }
-          catch(Exception e)
-       {
-           out.println(e);
-   }
-%>
-</table></div>
+                                    <form action="ContactDao" method="post" role="form" class="contactForm lead">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>User Name</label>
+                                                    <input type="text" name="uname" id="first_name" class="form-control input-md" required>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="email" name="email" id="last_name" class="form-control input-md" required>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Contact No.</label>
+                                                    <input type="number" name="phone" id="last_name" class="form-control input-md" required>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Our Address</label>
+                                                    <textarea disabled=""  rows="3" cols="20" name="address">K.L Colony Gandhinagar Thane(East)-400603 Maharashtra.</textarea>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label>Comment</label>
+                                                    <textarea required rows="3" cols="40" name="comment"></textarea>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
 
+                                        </div>
 
+                                        <input type="submit" value="Submit" class="btn btn-skin btn-block btn-lg">
+                                    </form>
+
+                                </div>
             </div><!-- End -->
+    
         </div>
     </div>
-    	
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->

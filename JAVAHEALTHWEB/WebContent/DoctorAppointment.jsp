@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.ResultSet"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,11 +32,30 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
-
+        
+	<style>
+		
+		
+		.table{
+		    background-color: rgb(66, 46, 46);
+		    color: white;
+		    border: red;
+		}
+		
+		.button{
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
-
+	<%!
+		Connection con;
+		PreparedStatement ps;
+		Statement st;
+		ResultSet rs;
+		String dname, pid,bill,pname,name,name1,id;
+	%>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -87,14 +111,58 @@
                     </div>
                 </div>
             </nav>
-            <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-f879" style="margin-top:300px;">
-                <h1>
-                    Bonjour 
-                    <% String name=(String)
-                        session.getAttribute("dname");out.println("<b>"+name+"</b>");
-                        %> et bienvenue sur votre l'interface
-                </h1>
-            </section>
+            <div class="container-fluid" style="padding:0px;">
+			<section id="intro" class="intro">
+				<div class="intro-content">
+					<div class="container">
+						<div class="row">
+						<div class="col-lg-6">
+								<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+								<img src="images/hospital.jpg" class="img-responsive" alt="" />
+								</div>
+							</div>	
+							<div class="col-lg-6">
+		                                             
+		                                            <div class="panel-body" style="">
+		                                                <center><img src="images/appointments.jpg" height="230px" width="510px"></center><hr>
+		                                                
+		                                                    <%
+		                                                            id=(String)session.getAttribute("did");
+		                                                            name1=(String)session.getAttribute("dname");
+		                                                           //out.println(id+" "+name1);
+		                                                            try {
+		                                                                Class.forName("com.mysql.jdbc.Driver");
+		                                                                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement", "root", "");
+		                                                                st = con.createStatement();
+		                                                                rs = st.executeQuery("select Pid,Pname from Table_Appointment where Dname='"+name1+"'");
+		                                                                if(!rs.next())
+		                                                                {
+		                                                                    %> 
+		                                                                    <center><h1>No Appointment is Fixed With You.</h1></center>
+		                                                                    <%
+		                                                                }
+		                                                                else
+		                                                                {
+		                                                                    rs = st.executeQuery("select Pid,Pname from Table_Appointment where Dname='"+name1+"'");
+		                                                                while (rs.next()) {
+		                                                                   pid = rs.getString("Pid");
+		                                                                   name = rs.getString("Pname");
+		                                                        %>         
+		                                                        <center><b><%=name%></b>[<b><%=pid%></b>] &nbsp;&nbsp;&nbsp;Have fixed a appointment with you.</center>
+		                                                        <center><a style="color:red;" href="ViewDoctorAppointment.jsp?id=<%=pid%>">View Appointment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:red;" href="CancelAppointment.jsp?id=<%=pid%>">Cancel Appointment</a><hr></center>
+		                                                        <%
+		                                                                }
+		                                                                    }
+		                                                            } catch (Exception e) {
+		                                                                out.println(e);
+		                                                            }
+		
+		                                                        %>
+		                                            </div> </div></div></div>
+									</div>	
+						</div>		
+</section>
+</div>
         </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->

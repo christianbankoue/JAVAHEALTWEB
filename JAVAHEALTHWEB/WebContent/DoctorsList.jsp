@@ -38,6 +38,10 @@
 			text-decoration: none;
 			color:red;
 		}
+		.button{
+			text-align: center;
+			margin-right: auto;
+		}
 		
 		h4 {
 			text-align: center;
@@ -47,23 +51,7 @@
 </head>
 
 <body>
-
-<%!
-            Connection con;
-            Statement st;
-            String name,id,s4,s5,s6,s7,s8,s1,s2;
-            %>
-       <%
-     try
-     {
-         name =(String)session.getAttribute("name");
-         id=(String)session.getAttribute("pid");   
-    Class.forName("com.mysql.jdbc.Driver");
-    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
-    Statement st=con.createStatement();
-    ResultSet rs=st.executeQuery("select Pid,Pname,Department,Dname,Fees,App_Date,App_Time from Table_Appointment");
-    %>
-    <div class="">
+    <div class="wrapper">
         <!-- Sidebar  -->
         
         <!-- Page Content  -->
@@ -108,37 +96,48 @@
        		
                 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
-<h4>Appointment List</h4>
+<h4>Doctors List</h4>
 <tr>
-    <th>Patient Name</th><th>Patient ID</th><th>Doctor Department</th><th>Doctor Name</th><th>Doctor Fees</th><th>Appointment Date</th><th>Appointment Time</th>
-  </tr>
-    <%
-    while(rs.next())
-    {
-         id=rs.getString("Pid");
-         name=rs.getString("Pname");
-         s4=rs.getString("Department");
-         s5=rs.getString("Dname");
-         s6=rs.getString("Fees");
-         s7=rs.getString("App_Date");
-         s8=rs.getString("App_Time");
-  
-    %>
+<th>Doctor name</th><th>ID</th><th>Email</th><th>Gender</th><th>Age</th><th>Fees</th><th>Department</th><th>Degree</th><th>Address</th><th>Registration Date</th><th>Action</th>
+</tr>
+<%
+try
+{
+	Class.forName("com.mysql.jdbc.Driver");
+    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
+    Statement st=con.createStatement();
+    ResultSet rs=st.executeQuery("select Dname,Did,Gender,Reg_Date,Email,Gender,Department,Age,Degree,Fees,Address from Table_Doctor ");
     
-    <tr><td><%=name%></td><td><%=id%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%></td><td><%=s7%></td><td><%=s8%></td></tr>  
-    <%
-    }  
-
-      }
-          catch(Exception e)
-       {
-           out.println(e);
-   }
+	while(rs.next())
+	{
+		String s1=rs.getString("Dname");
+        String s2=rs.getString("Did");
+        String s3=rs.getString("Email");
+        String s4=rs.getString("Gender");
+        String s5=rs.getString("Age");
+        String s6=rs.getString("Fees");
+        String s7=rs.getString("Department");
+        String s8=rs.getString("Degree");
+        String s9=rs.getString("Address");
+        String s10=rs.getString("Reg_Date");
+%>
+<tr>
+	<td><%=s1%></td><td><%=s2%></td><td><%=s3%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%><td><%=s7%><td><%=s8%><td><%=s9%><td><%=s10%></td>
+        <td><a href="EditADoctor.jsp?id=<%=s2%>">Edit</a>&nbsp;&nbsp;&nbsp;<a href="DeleteDoctor.jsp?id=<%=s2%>">Delete</a></td>
+</tr>	
+<%	
+	}
+}
+catch(Exception e)
+{
+	out.println(e);
+}
 %>
 </table></div>
 
 
             </div><!-- End -->
+    			<div class="button"><button><a href="AddDoctor.jsp">Add Doctor</a></button></div>
         </div>
     </div>
     	
