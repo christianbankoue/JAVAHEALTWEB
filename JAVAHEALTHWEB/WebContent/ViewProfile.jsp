@@ -156,7 +156,7 @@ try
 
 </table>
 </div>
-<div class="button"><button ><a href="EditProfile.jsp?pid=<%=pid%>">Edit</a></button>&nbsp;&nbsp;&nbsp;<button ><a href="DeletePatient.jsp?pid=<%=did%>">Delete</a></button></div>
+<div class="button"><button><a href="EditProfile.jsp?id=<%=pid %>">Edit</a></button></div>
 
 <%	
 	}

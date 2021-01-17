@@ -255,9 +255,7 @@
 	                                    <p>Déjà enregistré?&nbsp;&nbsp;&nbsp;&nbsp;<a href="PatientLogin.jsp">Connectez-vous ici</a></p>
 	                                </center><hr>
 	
-	                </div>
-	
-	
+	                
 	                </form>
             </div>
         </div>
