@@ -50,7 +50,7 @@
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button> -->
-                    <h3>Hospital Management System</h3>
+                    <h3>Clinique médicale</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -69,7 +69,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             
                         </ul>
@@ -90,7 +90,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-10 col-xl-7 mx-auto">
-                                <h3>Administration Login</h3>
+                                <h3>Connexion de l'administrateur</h3>
                                 <form action="AdministrateurDao" method="post" role="form">
                                     <div class="form-group mb-3">
                                         <input id="inputEmail first_name" type="text" name="Admin_name" placeholder="Name" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
