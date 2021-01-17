@@ -111,8 +111,7 @@
                                     </div>
                                     <button type="submit" value="Submit" class="btn btn-primary btn-skin btn-lg btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
                                 </form>
-                                <center><a href="ForgotPassword.jsp">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="DoctorForm.jsp">Sign Up Here</a></center>
+                                <center><a href="ForgotPassword.jsp">Forgot Password?</a></center>
                             </div>
                         </div>
                     </div><!-- End -->

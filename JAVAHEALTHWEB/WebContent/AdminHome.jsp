@@ -86,7 +86,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Accueil</a>
                             </li>
-                            <li class="nav-item active">
                                 <a class="nav-link" href="Feedback.jsp">Feedback</a>
                             </li>
                             <li class="nav-item">

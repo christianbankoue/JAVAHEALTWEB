@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>JSP</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -27,27 +32,40 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
-        
-        
+    
+    <style type="text/css">    
+        a{
+			text-decoration: none;
+			color:red;
+		}
+		.button{
+			text-align: center;
+			margin-right: auto;
+		}
+		
+		h4 {
+			text-align: center;
+		}
+		
+		section {
+			    margin-left: auto;
+    			margin-right: auto;
+    			border: solid black 1px;
+    			align-text : center;
+		}
+	</style>	
 
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <a href="index.html"><img src="img/logo.png" width="100%" height="100%"></a>
-            </div>
-        </nav>
-
+    <div>
+        
         <!-- Page Content  -->
-        <div id="content">
+        <div>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
                     <h3>Hospital Management System</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -57,8 +75,8 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -77,49 +95,64 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             <!-- The image half -->
-            <div class="col-md-6 d-none d-md-flex bg-image bg-imagePatient"></div>
-    
-    
-            <!-- The content half -->
-            <div class="col-md-6 bg-light">
-                <div class="login d-flex align-items-center py-5">
-    
-                    <!-- Demo content-->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 col-xl-7 mx-auto">
-                                <h3>Patient Login</h3>
-                                <form action="PatientDao" method="post" role="form">
-                                    <div class="form-group mb-3">
-                                        <input id="inputEmail first_name" type="text" name="Patient_name" placeholder="Patient Name" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
-                                    </div>
-                                    
-                                    <div class="form-group mb-3">
-                                        <input id="inputEmail first_name" type="text" name="pid" placeholder="Patient ID" required="" autofocus="" title="Enter your Patient ID" class="form-control rounded-pill border-0 shadow-sm px-4">
-                                    </div>
-                                    
-                                    <div class="form-group mb-3">
-                                        <input id="inputPassword last_name" type="password" name="Password" placeholder="Password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Password should contain at least 1 Uppercase ,1 Lowercase and digit and minimum of 6 character." class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
-                                    </div>
-                                    <div class="custom-control custom-checkbox mb-3">
-                                    </div>
-                                    <div class="custom-control custom-checkbox mb-3">
-                                        <input id="customCheck1" type="checkbox" checked class="custom-control-input">
-                                        <label for="customCheck1" class="custom-control-label">Remember password</label>
-                                    </div>
-                                    <button type="submit" value="Submit" class="btn btn-primary btn-skin btn-lg btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
-                                </form>
-                                <center><a href="ForgotPass.jsp">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="PatientForm.jsp">Sign Up Here</a></center>
-                            </div>
-                        </div>
-                    </div><!-- End -->
-    
-                </div>
+       		
+		<section id="intro" class="intro">
+				<div class="intro-content">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-lg-12">
+		                                             
+							<div class="panel-body" style="">
+                                    <center><img src="images/Password.jpg" height="130px" width="510px"></center><hr>
+                                    <center>
+												<%
+												   try
+												   {
+												        String  Name = request.getParameter("name");
+												        String  email = request.getParameter("email");
+												        //out.println(Name+" "+email);
+												        Class.forName("com.mysql.jdbc.Driver");
+												        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
+												       PreparedStatement ps = con.prepareStatement("select Pass from Table_Patient where  Pname=? and Email=? ");
+												        ps.setString(1, Name);
+												        ps.setString(2, email);
+												        ResultSet rs = ps.executeQuery();
+												        if(!rs.next())
+												        {
+												            out.println("<center><h3>Sorry! Patient Name or Patient Email-ID does not match.</h3></center>");
+												            out.println("<hr><center><a href='ForgotPass.jsp'>Try Again</a></center>");
+												        }
+												        else
+												        {
+												            String   pwd = rs.getString("Pass");
+												            out.print("<center><h3>Your Password is&nbsp= &nbsp;&nbsp;"+pwd+"</h3></center>");
+												            out.println("<hr><center><a href='PatientLogin.jsp'>Login Now</a></center>");
+												        }
+												   }
+												    catch(Exception e)
+												    {
+												        out.print(e);
+												    }
+												%>
+                                    </center>
+
+                                </div>
+													</div>
+									</div>	
+							</div>		
+						</div>		
+					</div>	
+		    </section>
+		    
+		    </div>
+
+
             </div><!-- End -->
-    
+    			
         </div>
     </div>
+    	
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->

@@ -82,7 +82,7 @@ out.println("<td><a href='EditAppointment.jsp?id="+id+"'>Edit</a>&nbsp;&nbsp;&nb
 
 </table></div></div>
 <center>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BookApointment.jsp">Book Appointment Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+    <a href="PatientHome.jsp">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BookApointment.jsp">Book Appointment Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">Logout</a>
 </center>
     </body>
 </html>

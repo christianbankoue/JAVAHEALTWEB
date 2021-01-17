@@ -28,7 +28,7 @@ try
         int j=st1.executeUpdate("delete from Table_Appointment where Pid='"+id+"'");
         st2=conn.createStatement();
         int k=st2.executeUpdate("delete from Patient_Bill where Pid='"+id+"'");
-	response.sendRedirect("ViewAPatients.jsp");
+	response.sendRedirect("ViewPatients.jsp");
 }
 catch(Exception e)
 {

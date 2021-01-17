@@ -59,7 +59,7 @@ ResultSet rs;
 String name,email,gender,pass,age,Reg_Date,contact,dob,status,pid,room,address,disease;
 %>
 
-    <div class="wrapper">
+    <div class="Wrapper">
         <!-- Sidebar  -->
         
         <!-- Page Content  -->
@@ -67,11 +67,6 @@ String name,email,gender,pass,age,Reg_Date,contact,dob,status,pid,room,address,d
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
-                    <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button> -->
                     <h3>Hospital Management System</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

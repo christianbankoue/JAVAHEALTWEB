@@ -36,7 +36,7 @@ try
 	conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
 	st=conn.createStatement();
 	int i=st.executeUpdate("update Table_Patient set  Pname='"+name+"',Email='"+email+"',Pass='"+pass+"',Contact='"+contact+"',DOB='"+dob+"',Gender='"+gender+"',Age="+age+",Pstatus='"+status+"',Address='"+address+"',Disease='"+disease+"',RoomType='"+room+"' where Pid='"+id+"'");
-	response.sendRedirect("ViewAPatients.jsp");
+	response.sendRedirect("ViewPatients.jsp");
 }
 catch(Exception e)
 {
