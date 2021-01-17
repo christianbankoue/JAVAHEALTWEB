@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="custom-control custom-checkbox mb-3">
                                         <input id="customCheck1" type="checkbox" checked class="custom-control-input">
-                                        <label for="customCheck1" class="custom-control-label">Remember password</label>
+                                        <label for="customCheck1" class="custom-control-label">Se souvenir du mot de passe</label>
                                     </div>
                                     <button type="submit" value="Submit" class="btn btn-primary btn-skin btn-lg btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
                                 </form>

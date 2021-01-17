@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -50,7 +50,7 @@
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button> -->
-                    <h3>Hospital Management System</h3>
+                    <h3>Clinique médicale</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -69,16 +69,16 @@
                                 <a class="nav-link" href="About.jsp">Ã€ propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             <li style='margin-top: 12px;background-color: white;'>
                                 <div class="dropdown">
                                     <button style='background-color:white;color:black;' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                        Sign Up  <span class="caret"></span>
+                                        S'inscrire  <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a href="PatientForm.jsp">Patient Sign Up</a></li>
-                                        <li><a href="DoctorForm.jsp">Doctor Sign Up</a></li>
+                                        <li><a href="PatientForm.jsp">Inscription du patient</a></li>
+                                        <li><a href="DoctorForm.jsp">Inscription du médecin</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -100,43 +100,43 @@
                                              
                                             <div class="panel-body" style="">
                                                 <center><img src="images/About.png" width="510px"></center><hr>
-                                                <b>Hospital Management</b>
-                                                <p>When it comes to choosing a hospital, one thing is clear: quality counts. 
-                                                    And a century-long tradition of providing medical care in a comfortable and convenient environment 
-                                                    means peace of mind for the thousands of patients who are cared for by the doctors and 
-                                                    nurses at the Demo Hospital each year.</p>
-                                                       <b>A Tradition of Quality</b> 
+                                                <b>Gestion de l'hopitale</b>
+                                                <p>Lorsqu'il s'agit de choisir un hôpital, une chose est claire: la qualité compte.
+                                                    Et une tradition centenaire de fourniture de soins médicaux dans un environnement confortable et pratique
+                                                    signifie la tranquillité d'esprit pour les milliers de patients pris en charge par les médecins et
+                                                    infirmières à l'hôpital de démonstration chaque année..</p>
+                                                       <b>Un tradition de qualité</b> 
                                                        <p>
-                                                           Since July 2017, The Demo Hospital has been jointly owned and operated by a partnership 
-                                                           between XYZ and a subsidiary of Universal Health Services Inc. PA-based company that 
-                                                           is one of the nation's largest health care management companies. Under the terms of this 
-                                                           partnership, named The District Hospital Partners, ABC, PQR holds an 80 percent 
-                                                           interest and the University holds a 20 percent interest.
+                                                           Depuis juillet 2017, The Demo Hospital est détenu et exploité conjointement par un partenariat
+                                                           entre XYZ et une filiale d'Universal Health Services Inc., société basée à l'AP qui
+                                                           est l'une des plus grandes sociétés de gestion des soins de santé du pays. Aux termes de ce
+                                                           partenariat, nommé The District Hospital Partners, ABC, PQR détient 80 pour cent
+                                                           intérêt et l'Université détient un intérêt de 20%.
                                                        </p>
-                                            <b>Mission</b> 
+                                            <b>Notre Mission</b> 
                                             <p>
-                                                The mission of The Demo Hospital is to provide the highest quality health care, advanced technology 
-                                                and world class service to our patients in an academic 
-                                                medical center dedicated to education and research.
+                                                La mission de l'hôpital est de fournir des soins de santé de la plus haute qualité, une technologie de pointe
+                                                et un service de classe mondiale à nos patients dans une université
+                                                centre médical dédié à l'éducation et à la recherche.
                                             </p>
-                                            <b>Vision</b> 
+                                            <b>Notre Vision</b> 
                                             <p>
-                                                Together, we will pursue our passion for healing, discovering medical breakthroughs and 
-                                                improving lives. While developing tomorrow's leaders, we will earn our community's
-                                                trust and recognition as the first choice for complex medical care. 
+                                                Ensemble, nous poursuivrons notre passion pour la guérison, en découvrant les percées médicales et
+                                                améliorer des vies. Tout en développant les leaders de demain, nous gagnerons à notre communauté
+                                                confiance et reconnaissance comme premier choix pour les soins médicaux complexes. 
                                             </p>
-                                            <b>Principles</b> 
-                                            <p>We realize this vision through our commitment to the following principles:</p>
+                                            <b>Nos principes</b> 
+                                            <p>Nous réalisons cette vision grâce à notre engagement envers les principes suivants:</p>
                                     <ul style="list-style-type: circle;color: red;">                                        
-                                        <li><b>Service excellence.</b></li>
-                                        <li><b>Quality improvement.</b></li>
-                                        <li><b>Employee development.</b></li>
-                                        <li><b>Ethical and fair treatment.</b></li>
+                                        <li><b>Service d'excellence.</b></li>
+                                        <li><b>Amelioration de la qualité.</b></li>
+                                        <li><b>Développement des employés.</b></li>
+                                        <li><b>Traitement éthique et équitable.</b></li>
                                         
                                     </ul>
                                             <b>Accreditation</b> 
                                             <p>
-                                               The hospital is accredited by The Joint Commission and licensed by the District of Thane, Maharashtra Regulatory Affairs Department.
+                                               L'hôpital est accrédité par l'OMS, et le centre Pasteur de Paris.
                                             </p>
                                             
                                             </div>

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -66,7 +66,7 @@
                 <div class="container-fluid">
 
                     
-                    <h3>Hospital Management System</h3>
+                    <h3>Clinique médicale</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -76,16 +76,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="About.jsp">� propos de Nous</a>
+                                <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
 
                         </ul>
@@ -106,7 +106,7 @@
                     <!-- Demo content-->
                     
                     <div class="container">
-                    	<h4>Create a patient Account</h4>
+                    	<h4>Créer un compte patient</h4>
                     	<br>
                         <div class="row">
 	                    <form action="AddPProcess.jsp" method="post" role="form" class="contactForm lead">
@@ -130,7 +130,7 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Patient Name</label>
+	                                    <label>Nom du patient</label>
 	                                    <input type="text" pattern="[a-zA-Z][a-zA-Z ]+[a-zA-Z]$" name="name" id="last_name"
 	                                        class="form-control input-md" required=""
 	                                        title="Patient name can not be blank and should not contain any digit.">
@@ -157,7 +157,7 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Contact No.</label>
+	                                    <label>Nr téléphone</label>
 	                                    <input type="number" name="phone" id="first_name" class="form-control input-md"
 	                                        required="" title="Phone no. should not contain any alaphabets.">
 	                                    <div class="validation"></div>
@@ -173,19 +173,19 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Patient Gender</label>
+	                                    <label>Sexe du patient</label>
 	                                    <select name="gender" class="form-control" required="">
-	                                        <option selected="" value="-1" disabled="">Select Gender</option>
-	                                        <option>Male</option>
-	                                        <option>Female</option>
-	                                        <option>Other</option>
+	                                        <option selected="" value="-1" disabled="">Selectionner le Genre</option>
+	                                        <option>Homme</option>
+	                                        <option>Femme</option>
+	                                        <option>Autre</option>
 	                                    </select>
 	                                    <div class="validation"></div>
 	                                </div>
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Patient Age</label>
+	                                    <label>Age du Patient</label>
 	                                    <input type="number" name="age" id="last_name" class="form-control input-md"
 	                                        required="" title="Age should not contain any alaphabets.">
 	                                    <div class="validation"></div>
@@ -193,20 +193,20 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Marital Status</label>
+	                                    <label>État civil</label>
 	                                    <select name="status" class="form-control" required="">
 	                                        <option selected="" value="-1" disabled="">Select Status</option>
-	                                        <option>Married</option>
-	                                        <option>Divorced</option>
-	                                        <option>Single</option>
-	                                        <option>Widow</option>
+	                                        <option>Marié (e)</option>
+	                                        <option>Divorcé (e)</option>
+	                                        <option>Célibataire</option>
+	                                        <option>Veuf / Veuve</option>
 	                                    </select>
 	                                    <div class="validation"></div>
 	                                </div>
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Address</label>
+	                                    <label>Adresse</label>
 	                                    <input type="Address" name="age" id="last_name" class="form-control input-md"
 	                                        required="" title="Age should not contain any alaphabets.">
 	                                    <div class="validation"></div>
@@ -214,31 +214,31 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Select Disease</label>
+	                                    <label>Sélectionnez une maladie</label>
 	                                    <select name="disease" class="form-control" required="">
-	                                        <option selected="" value="-1" disabled="">Select Disease</option>
-	                                        <option value="Normal Diseases">Normal Diseases</option>
+	                                        <option selected="" value="-1" disabled="">Sélectionnez une maladie</option>
+	                                        <option value="Normal Diseases">Maladies normales</option>
 	                                        <option value="Cancer">Cancer</option>
-	                                        <option value="Celiac Disease">Celiac Disease</option>
-	                                        <option value="Heart Disease">Heart Disease</option>
+	                                        <option value="Celiac Disease">Maladies cœliaques</option>
+	                                        <option value="Heart Disease">Maladies cardiaques</option>
 	                                        <option value="Crohn's & Colitis">Crohn's & Colitis</option>
-	                                        <option value="Infectious Diseases">Infectious Diseases</option>
-	                                        <option value="Liver Disease">Liver Disease</option>
-	                                        <option value="Big Diseases">Big Diseases</option>
-	                                        <option value="Private Diseases">Private Diseases</option>
-	                                        <option value="Ear, Nose and Throat Diseases">ENT Diseases</option>
-	                                        <option value="Other Diseases">Other Diseases</option>
+	                                        <option value="Infectious Diseases">Maladies Infectueuses</</option>
+	                                        <option value="Liver Disease">Maladies du Foi</option>
+	                                        <option value="Big Diseases">Maladies graves</option>
+	                                        <option value="Private Diseases">Maladies privées</option>
+	                                        <option value="Ear, Nose and Throat Diseases">Maladies ORL</option>
+	                                        <option value="Other Diseases">Autres Maladies</option>
 	                                    </select>
 	                                    <div class="validation"></div>
 	                                </div>
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Room Type</label>
+	                                    <label>Type de chambre</label>
 	                                    <select name="room" class="form-control" required="">
-	                                        <option selected="" value="-1" disabled="">Select Room Type</option>
-	                                        <option value="Normal">Normal</option>
-	                                        <option value="Medium">Medium</option>
+	                                        <option selected="" value="-1" disabled="">Sélectionnez le type de chambre</option>
+	                                        <option value="Normal">Normale</option>
+	                                        <option value="Medium">Moyen</option>
 	                                        <option value="V.I.P">V.I.P</option>
 	                                    </select>
 	                                    <div class="validation"></div>
