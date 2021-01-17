@@ -40,7 +40,7 @@ th
 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
     <tr>
-    <th>Doctor Name</th><th>Doctor ID</th><th>Doctor Email</th><th>Doctor Gender</th><th>Age</th><th>Fees</th><th>Department</th><th>Degree</th><th>Address</th><th>Registration Date</th>
+    <th>Nom du docteur</th><th>ID</th><th>Email</th><th>Sexe</th><th>Age</th><th>Frais</th><th>Departement</th><th>Etude</th><th>Address</th><th>Date d'inscription</th>
   </tr>
     <%
     while(rs.next())
@@ -58,7 +58,7 @@ th
     %>
     
     <tr><td><%=s1%></td><td><%=s2%></td><td><%=s3%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%></td><td><%=s7%></td><td><%=s8%></td><td><%=s9%></td><td><%=s10%></td> 
-    <td><a href="EditProfile.jsp?id=<%=s2%>">Edit</a>&nbsp;&nbsp;&nbsp;<a href="DeletePatient.jsp?id=<%=s2%>"></a></td></tr>
+    <td><a href="EditProfile.jsp?id=<%=s2%>">Editer</a>&nbsp;&nbsp;&nbsp;<a href="DeletePatient.jsp?id=<%=s2%>"></a></td></tr>
     <%
     }  
       }
@@ -68,6 +68,6 @@ th
    }
 %>
 </table></div></div>
-<center><a href="index.html">Home</a></center>
+<center><a href="index.html">Accueil</a></center>
     </body>
 </html>

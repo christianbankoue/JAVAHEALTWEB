@@ -44,13 +44,13 @@ th
      rs=st.executeQuery("select * from Table_Appointment where Pid='"+id+"'");
     %>
     <% if (!rs.next() ) {
-    out.println("<center><h1>No Patient have book any appointment with you.</h1></center>");
+    out.println("<center><h1>Aucun patient n'a pris de rendez-vous avec vous.</h1></center>");
 } else{ %>
 <div class="container-fluid" style="padding:0px;">
 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
     <tr>
-        <th>Patient Name</th><th>Patient ID</th><th>Doctor Department</th><th>Doctor Name</th><th>Doctor Fees</th><th>Appointment Date</th><th>Appointment Time</th><th>Action</th>
+        <th>Nom du patient</th><th>ID</th><th>Department du docteur</th><th>Nom du docteur</th><th>Frais</th><th>Date du rendez-vous</th><th>Heure du rendez-vous</th><th>Action</th>
   </tr>
     <%
       st1=con.createStatement();
@@ -68,7 +68,7 @@ th
     %>
     
     <tr><td><%=name%></td><td><%=id1%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%></td><td><%=s7%></td><td><%=s8%></td>
-    <td><a href="EditDAppointment.jsp?id=<%=id%>">Edit</a>&nbsp;&nbsp;&nbsp;<a href="CancelAppointment.jsp?id=<%=id%>">Cancel</a></td></tr></tr>  
+    <td><a href="EditDAppointment.jsp?id=<%=id%>">Editer</a>&nbsp;&nbsp;&nbsp;<a href="CancelAppointment.jsp?id=<%=id%>">Annuler</a></td></tr></tr>  
     <%
     }  }
 
@@ -82,7 +82,7 @@ th
 
 </table></div></div>
 <center>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+    <a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
 </center>
     </body>
 </html>

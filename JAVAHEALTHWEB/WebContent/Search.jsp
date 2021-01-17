@@ -51,11 +51,11 @@ th
                //  ps.setString(1,pid);
                
 			//out.print("<div class='container-fluid' style='padding:0px;'><div class='table-responsive'><table border='3' class='table table-striped'>");
-			out.print("<center><b>Search Result</b></center>");
+			out.print("<center><b>Résultat de la recherche</b></center>");
 			
 			if(!rs.next())
                         {
-                            out.println("<center><h1>No Patient Found With This Patient ID.</h1></center>");
+                            out.println("<center><h1>Aucun patient trouvé avec cet ID patient.</h1></center>");
                         }
                         else
                         {
@@ -63,7 +63,7 @@ th
 			 rs=st.executeQuery("select Pname,Pid,Email,Gender,DOB,Contact,Address,Disease,RoomType,Age,Pstatus,Reg_Date from Table_Patient where Pid='"+pid+"'");
 			out.print("<div class='container-fluid' style='padding:0px;'><div class='table-responsive'>"); 
 out.print("<table border='3' class='table table-striped'>");
-out.print("<tr><th>Patient Name</th><th>PID</th><th>Email</th><th>Gender</th><th>DOB</th><th>Contact NO.</th><th>Address</th><th>Disease Name</th><th>Room Type</th><th>Age</th><th>Pstatus</th><th>Admit Date</th></tr>");
+out.print("<tr><th>Nom du patient</th><th>PID</th><th>Email</th><th>Sexe</th><th> Date de naissance</th><th>Nr téléphone.</th><th>Adresse</th><th>Nom de la maladie</th><th>Type de chambre</th><th>Age</th><th>statut</th><th>Date d'admition</th></tr>");
 			while(rs.next())
 			{
 			out.print("<tr><td>"+rs.getString("Pname")+"</td><td>"+rs.getString("Pid")+"</td><td>"+rs.getString("Email")+"</td><td>"+rs.getString("Gender")+"</td><td>"+rs.getString("DOB")+"</td><td>"+rs.getString("Contact")+"</td><td>"+rs.getString("Address")+"</td><td>"+rs.getString("Disease")+"</td><td>"+rs.getString("RoomType")+"</td><td>"+rs.getString("Age")+"</td><td>"+rs.getString("Pstatus")+"</td><td>"+rs.getString("Reg_Date")+"</td></tr>");
@@ -79,6 +79,6 @@ out.print("<tr><th>Patient Name</th><th>PID</th><th>Email</th><th>Gender</th><th
                 
             }  
         %>
-<center><a href="index.html">Home</a></center>
+<center><a href="index.html">Accueil</a></center>
     </body>
 </html>

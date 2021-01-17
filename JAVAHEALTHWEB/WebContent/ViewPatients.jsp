@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -67,7 +67,7 @@ String name,email,gender,pass,age,Reg_Date,contact,dob,status,pid,room,address,d
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +86,7 @@ String name,email,gender,pass,age,Reg_Date,contact,dob,status,pid,room,address,d
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             
                         </ul>
@@ -94,14 +94,14 @@ String name,email,gender,pass,age,Reg_Date,contact,dob,status,pid,room,address,d
                 </div>
             </nav>
     <div class="container-fluid">
-    	<h4>Patients List</h4>
+    	<h4>Liste des patients</h4>
         <div class="row no-gutter">
             <!-- The image half -->
        		
                 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
 <tr>
-<th>PID</th><th>Pname</th><th>Email</th><th>Contact No.</th><th>DOB</th><th>Gender</th><th>Age</th><th>Status</th><th>Address</th><th>Disease</th><th>Room Type</th><th>Registered Date</th><th>Action</th>
+<th>PID</th><th>Nom</th><th>Email</th><th>Nr téléphone.</th><th>Date de naissance</th><th>Sexe</th><th>Age</th><th>Status</th><th>Address</th><th>Maladie</th><th>Room Type</th><th>Date d'enregistrement</th><th>Action</th>
 </tr>
 <%
 try
@@ -130,7 +130,7 @@ try
 %>
 <tr>
 	<td><%=pid%></td><td><%=name%></td><td><%=email%></td><td><%=contact%></td><td><%=dob%></td><td><%=gender%><td><%=age%><td><%=status%><td><%=address%><td><%=disease%></td><td><%=room%></td><td><%=Reg_Date%></td>
-        <td><a href="EditPatient.jsp?id=<%=pid%>">Edit</a>&nbsp;&nbsp;&nbsp;<a href="DeletePatient.jsp?id=<%=pid%>">Delete</a></td>
+        <td><a href="EditPatient.jsp?id=<%=pid%>">Editer</a>&nbsp;&nbsp;&nbsp;<a href="DeletePatient.jsp?id=<%=pid%>">Supprimer</a></td>
 </tr>	
 <%	
 	}
@@ -144,7 +144,7 @@ catch(Exception e)
 
 
             </div><!-- End -->
-    			<div class="button"><button><a href="AddPatient.jsp">Add Patient</a></button></div>
+    			<div class="button"><button><a href="AddPatient.jsp">Ajouter patient</a></button></div>
         </div>
     </div>
     	

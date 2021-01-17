@@ -39,7 +39,7 @@
            }
            else
            {
-               out.println("<h1>Somethong Went Wrong Try Again...</h1>");
+               out.println("<h1>Une erreur s'est produite. Réessayez...</h1>");
            }
            }
         catch(Exception e)

@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -91,7 +91,7 @@
                 <div class="container-fluid">
 
                     
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +101,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -110,7 +110,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
 
                         </ul>
@@ -131,7 +131,7 @@
                     <!-- Demo content-->
                     
                     <div class="container">
-                    	<h4>Create a patient Account</h4>
+                    	<h4>Créer un compte patient</h4>
                     	<br>
                         <div class="row">
 	                    <form action="EditPProcess.jsp?id=<%=id%>" method="post" role="form" class="contactForm lead">
@@ -145,7 +145,7 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Patient Name</label>
+                                                    <label>Nom du patient</label>
                                                     <input type="text" name="name" id="last_name" class="form-control input-md" value="<%=name%>">
                                                     <div class="validation"></div>
                                                 </div>
@@ -166,71 +166,71 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Contact No.</label>
+                                                    <label>Nr téléphone.</label>
                                                     <input type="text" name="phone" id="first_name" class="form-control input-md" value="<%=contact%>">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Patient DOB</label>
+                                                    <label>Date de naissance</label>
                                                     <input type="date" name="dob" id="last_name" class="form-control input-md" value="<%=dob%>" >
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Patient Gender</label>
+                                                    <label>Sexe</label>
                                                     <select name="gender">
-                                                        <option selected="" value="-1" disabled="">Select Gender</option>
-                                                        <option>Male</option>
-                                                        <option>Female</option>
-                                                        <option>Other</option>
+                                                        <option selected="" value="-1" disabled="">Selectionner le genre</option>
+                                                        <option>Homme</option>
+                                                        <option>Femme</option>
+                                                        <option>Autre</option>
                                                     </select>
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Patient Age</label>
+                                                    <label>Age</label>
                                                     <input type="text"  name="age" id="last_name" class="form-control input-md" value="<%=age%>">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Marital Status</label>
+                                                    <label>État civil</label>
                                                     <select name="status">
-                                                        <option selected="" value="-1" disabled="">Select Marital Status</option>
-                                                        <option>Married</option>
-                                                        <option>Divorced</option>
-                                                        <option>Single</option>
-                                                        <option>Widow</option>
+                                                        <option selected="" value="-1" disabled="">Selectionner le Statut</option>
+                                                        <option>Marié</option>
+                                                        <option>Divorcé</option>
+                                                        <option>Célibataire</option>
+                                                        <option>Veuve</option>
                                                     </select>
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Address</label>
+                                                    <label>Adresse</label>
                                                     <input type="text"  name="address" id="last_name" class="form-control input-md" value="<%=address%>">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Disease</label>
+                                                    <label>Maladie</label>
                                                     <input type="text"  name="disease" id="last_name" class="form-control input-md" value="<%=disease%>">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Room Type</label>
+                                                    <label>Type de chambre</label>
                                                     <select name="room">
-                                                        <option selected="" value="-1" disabled="">Select Room Type</option>
+                                                        <option selected="" value="-1" disabled="">Select typ de chambre</option>
                                                         <option>Normal</option>
-                                                        <option>Medium</option>
+                                                        <option>Moyen</option>
                                                         <option>V.I.P</option>
                                                     </select>
                                                     <div class="validation"></div>

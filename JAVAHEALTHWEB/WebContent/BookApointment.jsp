@@ -128,7 +128,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -147,7 +147,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             
                         </ul>
@@ -173,15 +173,15 @@
                                         out.println("<b>" + name + "</b>");
                                         out.println("<b>&nbsp;&nbsp;&nbsp;&nbsp;" + "[" + id + "]</b>");
                                         %></center><hr>
-                                    <center><h3>Book Appointment</h3></center><hr>
+                                    <center><h3>Prendre un rendez-vous</h3></center><hr>
                                     <form action="AppointmentReg.jsp" method="post" name="form" class="contactForm lead">
                                         <div class="row">
 
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Department</label>
+                                                    <label>Sélectionnez un département</label>
                                                     <select name='department' onchange="showDoctor(this.value)" required="" class="form-control">
-                            <option selected="" value="none" disabled="">Select Department</option>
+                            <option selected="" value="none" disabled="">Sélectionnez un département</option>
                                                       <%
                                 try
                                 {
@@ -219,10 +219,10 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Doctor</label>
+                                                    <label>Sélectionnez un médecin</label>
                                                     <div id="doctor">
                                                         <select name='doctor' class="form-control">  
-                                                                <option value='-1'>Select Doctor</option>  
+                                                                <option value='-1'>Sélectionnez un médecin</option>  
                                                                 </select>
                                                     </div>                                         
                                                     <div class="validation"></div>
@@ -230,10 +230,10 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Consultancy Fees</label>
+                                                    <label>Frais de consultation</label>
                                                     <div id="fees">
                                                         <select name='fees' class="form-control">  
-                                                                <option value='-1'>Doctor Fees</option>  
+                                                                <option value='-1'>Frais de médecin</option>  
                                                                 </select>
                                                     </div>  
                                                     <div class="validation"></div>
@@ -242,14 +242,14 @@
 
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Appointment Date</label>
+                                                    <label>Sélectionnez la date de rendez-vous</label>
                                                     <input type="date" required="" name="date" id="first_name" class="form-control input-md" title="Appointment Date">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Appointment Time</label>
+                                                    <label>Sélectionnez l'heure de rendez-vous</label>
                                                     <input type="time" required="" name="time" id="first_name" class="form-control input-md" title="Appointment Time">
                                                     <div class="validation"></div>
                                                 </div>
@@ -260,7 +260,7 @@
                                       
                                     </form>
                                     <center>
-                                        <a style="color:red;" href="LastAppointment.jsp?id=<%=id%>">View your Last Appointment</a>
+                                        <a style="color:red;" href="LastAppointment.jsp?id=<%=id%>">Afficher votre dernier rendez-vous</a>
                                     </center>
                                 </div>
 													</div>

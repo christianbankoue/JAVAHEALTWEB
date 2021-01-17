@@ -66,7 +66,7 @@
                 <div class="container-fluid">
 
                     
-                    <h3>Clinique médicale</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -166,7 +166,7 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Patient DOB</label>
+	                                    <label>Date de naissance</label>
 	                                    <input type="date" name="dob" id="last_name" class="form-control input-md"
 	                                        required="">
 	                                    <div class="validation"></div>
@@ -237,7 +237,7 @@
 	                                <div class="form-group">
 	                                    <label>Type de chambre</label>
 	                                    <select name="room" class="form-control" required="">
-	                                        <option selected="" value="-1" disabled="">Sélectionnez le type de chambre</option>
+	                                        <option selected="" value="-1" disabled="">Sélect le type de chambre</option>
 	                                        <option value="Normal">Normale</option>
 	                                        <option value="Medium">Moyen</option>
 	                                        <option value="V.I.P">V.I.P</option>

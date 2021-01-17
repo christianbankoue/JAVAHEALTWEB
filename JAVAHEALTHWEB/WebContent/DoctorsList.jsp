@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -64,7 +64,7 @@
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button> -->
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             
                         </ul>
@@ -96,9 +96,9 @@
        		
                 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
-<h4>Doctors List</h4>
+<h4>Liste des docteurs</h4>
 <tr>
-<th>Doctor name</th><th>ID</th><th>Email</th><th>Gender</th><th>Age</th><th>Fees</th><th>Department</th><th>Degree</th><th>Address</th><th>Registration Date</th><th>Action</th>
+<th>Nom du docteur</th><th>ID</th><th>Email</th><th>Sexe</th><th>Age</th><th>Frais</th><th>Département</th><th>Etude</th><th>Adresse</th><th>Date d'inscription</th><th>Action</th>
 </tr>
 <%
 try
@@ -123,7 +123,7 @@ try
 %>
 <tr>
 	<td><%=s1%></td><td><%=s2%></td><td><%=s3%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%><td><%=s7%><td><%=s8%><td><%=s9%><td><%=s10%></td>
-        <td><a href="EditADoctor.jsp?id=<%=s2%>">Edit</a>&nbsp;&nbsp;&nbsp;<a href="DeleteDoctor.jsp?id=<%=s2%>">Delete</a></td>
+        <td><a href="EditADoctor.jsp?id=<%=s2%>">Editer</a>&nbsp;&nbsp;&nbsp;<a href="DeleteDoctor.jsp?id=<%=s2%>">Supprimer</a></td>
 </tr>	
 <%	
 	}
@@ -137,7 +137,7 @@ catch(Exception e)
 
 
             </div><!-- End -->
-    			<div class="button"><button><a href="AddDoctor.jsp">Add Doctor</a></button></div>
+    			<div class="button"><button><a href="AddDoctor.jsp">Ajouter docteur</a></button></div>
         </div>
     </div>
     	

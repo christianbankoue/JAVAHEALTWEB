@@ -67,7 +67,7 @@
       }
       </script>  
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -121,7 +121,7 @@
                 <div class="container-fluid">
 
                     
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -140,7 +140,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
 
                         </ul>
@@ -161,7 +161,7 @@
                     <!-- Demo content-->
                     
                     <div class="container">
-                    	<h4>Doctor Registration Form</h4>
+                    	<h4>Zone d'inscription du médecin</h4>
                     	<br>
                         <div class="row">
 
@@ -169,7 +169,7 @@
                                         <div class="row">
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor ID</label>
+                                                    <label>ID du Docteur</label>
                                                     <input type="text" name="did" id="first_name" class="form-control input-md"   title="Patient ID" value="<% 
 	                                        		Random random = new Random();
 	                                        Set<Integer> randomNumbers = new HashSet<>();
@@ -185,7 +185,7 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor Name</label>
+                                                    <label>Nom du docteur</label>
                                                     <input type="text" pattern="[a-zA-Z][a-zA-Z ]+[a-zA-Z]$" name="name"  id="last_name" class="form-control input-md" required="" title="Doctor name can not be blank and should not contain any digit.">
                                                     <div class="validation"></div>
                                                 </div>
@@ -206,45 +206,45 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor Gender</label>
+                                                    <label>Sexe</label>
                                                     <select name="gender" class="form-control">
-                                                         <option selected="" disabled="">Select Gender</option>
-                                                        <option>Male</option>
-                                                        <option>Female</option>
+                                                         <option selected="" disabled="">Selectionner le genre</option>
+                                                        <option>Homme</option>
+                                                        <option>Femme</option>
                                                    </select>
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                              <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor Age</label>
+                                                    <label>Age</label>
                                                     <input type="number"  name="age" class="form-control input-md" required="">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>        
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Degree</label>
+                                                    <label>Sélectionnez une etude</label>
                                                     <select name="degree" class="form-control">
-                                                         <option selected="" disabled="">Select Degree</option>
-                                                        <option>M.B.B.S</option>
-                                                        <option>B.D.S</option>
-                                                        <option>B.P.T</option>
-                                                        <option>B.Sc Nursing</option>
-                                                        <option>B.H.M.S</option>
-                                                        <option>B.A.M.S</option>
-                                                        <option>RADIOGRAPHY</option>
-                                                        <option>D.D.S</option>
-                                                        <option>M.D</option>
+                                                         <option selected="" disabled="">Sélectionnez une etude</option>
+                                                        <option>Neurologie</option>
+                                                        <option>Generaliste</option>
+                                                        <option>Dentiste</option>
+                                                        <option>Cardiologie</option>
+                                                        <option>Infectiologue</option>
+                                                        <option>Pediatrie</option>
+                                                        <option>Gynecologie</option>
+                                                        <option>Urologie</option>
+                                                        <option>Dermatologie</option>
                                                    </select>
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                                                                         <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Department</label>
+                                                    <label>Sélectionnez un département</label>
                                                     <select name='department' onchange="showDoctor(this.value)" required="" class="form-control">
-                            <option selected="" value="none" disabled="">Select Department</option>
+                            <option selected="" value="none" disabled="">Sélectionnez un département</option>
                                                       <%
                                 try
                                 {
@@ -282,10 +282,10 @@
                                             </div>
                                                <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Department ID</label>
+                                                    <label>ID du département</label>
                                                     <div id="doctor">
                                                         <select name='doctor' class="form-control">  
-                                                                <option value='-1'>Select Doctor</option>  
+                                                                <option value='-1'>Sélectionnez docteur</option>  
                                                                 </select>
                                                     </div>                                         
                                                     <div class="validation"></div>
@@ -293,10 +293,10 @@
                                             </div>   
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor Fees</label>
+                                                    <label>Frais de médecin</label>
                                                     <div id="fees">
                                                         <select name='fees' class="form-control">  
-                                                                <option value='-1'>Doctor Fees</option>  
+                                                                <option value='-1'>Frais de médecin</option>  
                                                                 </select>
                                                     </div>  
                                                     <div class="validation"></div>
@@ -304,14 +304,14 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Contact No.</label>
+                                                    <label>Nr téléphone.</label>
                                                     <input type="number" required="" name="phone" id="first_name" class="form-control input-md" title="Enter Contact No.">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Address</label>
+                                                    <label>Adresse</label>
                                                     <textarea  title="Enter your Address" required rows="2" cols="20" name="address"></textarea>
                                                     <div class="validation"></div>
                                                 </div>

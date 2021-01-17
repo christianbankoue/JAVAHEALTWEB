@@ -22,7 +22,7 @@
     
     <table border="2">
     <tr>
-    <th>Patient Name</th><th>Patient ID</th><th>Patient Email</th><th>Doctor Specialization</th><th>Doctor Name</th><th>Fees</th><th>Date</th><th>Time</th>
+    <th>Nom du patient</th><th>ID</th><th>Email du Patient</th><th>Spécialité du docteur</th><th>Nom du docteur</th><th>Frais</th><th>Date</th><th>Heure</th>
   </tr>
     <%
     while(rs.next())

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Doctor Home</title>
+    <title>Interface du docteur</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -64,9 +64,9 @@
             </div>
             <ul class="list-unstyled components">
                 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="DoctorProfile.jsp">View Profile</a></li>
-                <li><a href="DoctorAppointment.jsp">View Your Appointment</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="DoctorProfile.jsp">Voir le profil</a></li>
+                <li><a href="DoctorAppointment.jsp">Afficher vos rendez-vous</a></li>
                 <li><a href="FeedbackForm.jsp">Feedback</a></li>
 
                 <ul class="list-unstyled CTAs">
@@ -95,7 +95,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -104,7 +104,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
 
                         </ul>
@@ -138,7 +138,7 @@
 		                                                                if(!rs.next())
 		                                                                {
 		                                                                    %> 
-		                                                                    <center><h1>No Appointment is Fixed With You.</h1></center>
+		                                                                    <center><h1>Aucun rendez-vous n'est fixé avec vous.</h1></center>
 		                                                                    <%
 		                                                                }
 		                                                                else
@@ -148,8 +148,8 @@
 		                                                                   pid = rs.getString("Pid");
 		                                                                   name = rs.getString("Pname");
 		                                                        %>         
-		                                                        <center><b><%=name%></b>[<b><%=pid%></b>] &nbsp;&nbsp;&nbsp;Have fixed a appointment with you.</center>
-		                                                        <center><a style="color:red;" href="ViewDoctorAppointment.jsp?id=<%=pid%>">View Appointment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:red;" href="CancelAppointment.jsp?id=<%=pid%>">Cancel Appointment</a><hr></center>
+		                                                        <center><b><%=name%></b>[<b><%=pid%></b>] &nbsp;&nbsp;&nbsp;Avoir fixé un rendez-vous avec vous.</center>
+		                                                        <center><a style="color:red;" href="ViewDoctorAppointment.jsp?id=<%=pid%>">Voir rendez-vous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:red;" href="CancelAppointment.jsp?id=<%=pid%>">Annuler rendez-vous</a><hr></center>
 		                                                        <%
 		                                                                }
 		                                                                    }

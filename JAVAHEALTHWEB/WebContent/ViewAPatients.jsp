@@ -37,7 +37,7 @@ String name,email,gender,pass,age,Reg_Date,contact,dob,status,pid,room,address,d
 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
 <tr>
-<th>PID</th><th>Pname</th><th>Email</th><th>Contact No.</th><th>DOB</th><th>Gender</th><th>Age</th><th>Status</th><th>Address</th><th>Disease</th><th>Room Type</th><th>Registered Date</th><th>Action</th>
+<th>PID</th><th>Nom</th><th>Email</th><th>Nr téléphone.</th><th>Date de naissance</th><th>Sexe</th><th>Age</th><th>Statut</th><th>Adresse</th><th>Maladie</th><th>Type de chambre</th><th>Date d'enregistrement</th><th>Action</th>
 </tr>
 <%
 try
@@ -66,7 +66,7 @@ try
 %>
 <tr>
 	<td><%=pid%></td><td><%=name%></td><td><%=email%></td><td><%=contact%></td><td><%=dob%></td><td><%=gender%><td><%=age%><td><%=status%><td><%=address%><td><%=disease%></td><td><%=room%></td><td><%=Reg_Date%></td>
-        <td><a href="EditPatient.jsp?id=<%=pid%>">Edit</a>&nbsp;&nbsp;&nbsp;<a href="DeletePatient.jsp?id=<%=pid%>">Delete</a></td>
+        <td><a href="EditPatient.jsp?id=<%=pid%>">Editer</a>&nbsp;&nbsp;&nbsp;<a href="DeletePatient.jsp?id=<%=pid%>">Supprimer</a></td>
 </tr>	
 <%	
 	}
@@ -78,7 +78,7 @@ catch(Exception e)
 %>
 </table></div></div>
 <center>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+    <a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
 </center>
 </body>
 </html>

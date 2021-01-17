@@ -44,7 +44,7 @@ th
                                                             st = con.createStatement();
                                                             rs = st.executeQuery("select Pid from Patient_Bill where Pname='"+name+"'");
                                                             if (!rs.next()) {
-                                                                out.println("<center><h1>You have Not Fixed any Appointment with any  Doctor Therefore no report is generated.</h1></center>");
+                                                                out.println("<center><h1>Vous n'avez fixé aucun rendez-vous avec un médecin, par conséquent aucun rapport n'est généré.</h1></center>");
                                                             } else {
 out.println("<div class='container-fluid' style='padding:0px;'><div class='table-responsive'><table border='3' class='table table-striped'>");
 out.println("<tr><th>PID</th><th>Name</th><th>Email</th><th>Gender</th><th>Age</th><th>Consultant Doctor</th><th>Disease Name</th><th>Room Type</th><th>Admit Date</th><th>Discharge Date</th><th>Bill Amount</th></tr>");
@@ -130,7 +130,7 @@ Class.forName("com.mysql.jdbc.Driver");
                                                     %>
 </table></div></div>
 <center>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PatientHome.jsp">Patient Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+    <a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PatientHome.jsp">Interface patient</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
 </center>
 <a href="InsertReports.jsp?id=<%=pid%>&name=<%=pname%>&email=<%=email%>&gender=<%=gender%>&age=<%=age%>&dname=<%=dname%>&disease=<%=disease%>&room=<%=room%>&admit_date=<%=adate%>&discharge_date=<%=s%>&bill=<%=bill%>"></a>
 </body>

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Doctor Home</title>
+    <title>Interface du docteur</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -64,9 +64,9 @@
             </div>
             <ul class="list-unstyled components">
                 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="DoctorProfile.jsp">View Profile</a></li>
-                <li><a href="DoctorAppointment.jsp">View Your Appointment</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="DoctorProfile.jsp">Voir le profil</a></li>
+                <li><a href="DoctorAppointment.jsp">Afficher vos rendez-vous</a></li>
                 <li><a href="FeedbackForm.jsp">Feedback</a></li>
 
                 <ul class="list-unstyled CTAs">
@@ -95,7 +95,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -104,7 +104,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
 
                         </ul>
@@ -141,22 +141,22 @@ try
 		Reg_Date=rs.getString("Reg_Date");
 %>
 	<tr><td class="blod">ID</td> <td><%=id%></td></tr>
-	<tr><td class="blod">Name</td> <td><%=name%></td></tr>
+	<tr><td class="blod">Nom</td> <td><%=name%></td></tr>
 	<tr><td class="blod">Email</td> <td><%=email%></td> </tr>
 	<tr><td class="blod">Password</td> <td><%=pass%></td></tr>
-	<tr><td class="blod">Gender</td> <td><%=gender%></td></tr>
+	<tr><td class="blod">Sexe</td> <td><%=gender%></td></tr>
 	<tr><td class="blod">Age</td> <td><%=age%></td></tr>
-	<tr><td class="blod">Disease</td> <td><%=disease%></td></tr>
-	<tr><td class="blod">Room Type</td> <td><%=room%></td></tr>
-	<tr><td class="blod">DOB</td><td><%=dob%></td></tr>
+	<tr><td class="blod">Maladie</td> <td><%=disease%></td></tr>
+	<tr><td class="blod">Type de chambre</td> <td><%=room%></td></tr>
+	<tr><td class="blod">Date de naissance</td><td><%=dob%></td></tr>
 	<tr><td class="blod">Contact</td><td><%=contact%></td></tr>   
-	<tr><td class="blod">Address</td><td><%=address%></td></tr>
-	<tr><td class="blod">Registered Date</td><td><%=Reg_Date%></td></tr>
+	<tr><td class="blod">Adresse</td><td><%=address%></td></tr>
+	<tr><td class="blod">Date d'enregistrement</td><td><%=Reg_Date%></td></tr>
 	
 
 </table>
 </div>
-<div class="button"><button><a href="EditProfile.jsp?id=<%=pid %>">Edit</a></button></div>
+<div class="button"><button><a href="EditProfile.jsp?id=<%=pid %>">Editer</a></button></div>
 
 <%	
 	}

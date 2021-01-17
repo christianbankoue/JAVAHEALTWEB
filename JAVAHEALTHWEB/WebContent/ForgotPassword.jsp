@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -62,7 +62,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +81,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             
                         </ul>
@@ -100,7 +100,7 @@
 							<div class="col-lg-12">
 		                                             
 							<div class="panel-body">
-		                                            <center><h3>Doctor Forgot Password Form</h3></center><hr>
+		                                            <center><h3>Formulaire de mot de passe oublié</h3></center><hr>
 							
 								<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 		                                                    <img src="images/doctoricon.jpg" style="width: 190px;height: 190px;margin-bottom: 9px; align-text: center;" class="img-responsive" alt="" />
@@ -110,14 +110,14 @@
 		    										<div class="row">
 		    											<div class="col-xs-6 col-sm-6 col-md-6">
 		    												<div class="form-group">
-		    													<label>Doctor Name</label>
+		    													<label>Nom du docteur</label>
 		    													<input required="" type="text" title="Enter Doctor Name" name="name"  class="form-control input-md">
 		                                                        <div class="validation"></div>
 		    												</div>
 		    											</div>
 		    											<div class="col-xs-6 col-sm-6 col-md-6">
 		    												<div class="form-group">
-		    													<label>Doctor Email-ID</label>
+		    													<label>Email-ID du Docteur</label>
 		    													 <input type="email" required="" name="email" class="form-control input-md" title="Enter your Doctor Email-ID">
 		                                                        <div class="validation"></div>
 		    												</div>
@@ -125,7 +125,7 @@
 		    										</div>
 		    										<input type="submit" value="Submit" class="btn btn-skin btn-block btn-lg">
 		    									</form>
-		                                            <center><a href="DoctorLogin.jsp">Login Here</a></center>
+		                                            <center><a href="DoctorLogin.jsp">Connectez-vous ici</a></center>
 													</div>
 									</div>	
 							</div>		

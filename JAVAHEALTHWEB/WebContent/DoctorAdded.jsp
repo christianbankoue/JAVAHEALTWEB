@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Management System</title>
+    <title>Centre Hospitalier Universitaire</title>
 	
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -35,11 +35,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
-				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="index.html">Accueil</a></li>
 				<li><a href="Services.jsp">Service</a></li>
-				<li><a href="DoctorsList.jsp">Doctors</a></li>
+				<li><a href="DoctorsList.jsp">Docteurs</a></li>
                                 <li><a href="ViewAPatients.jsp">Patient</a></li>
-                                <li><a href="About.jsp">About Us</a></li>
+                                <li><a href="About.jsp">A propos de nous</a></li>
 				
                                    
 			  </ul>
@@ -63,8 +63,8 @@
                                              
                                             <div class="panel-body" style="">
                                                 <center><img src="images/doctors.jpg" width="510px"></center><hr>
-                                                <center><h1>Doctor Added Successfully...</h1><hr>
-                                                    <a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+                                                <center><h1>Médecin ajouté avec succès...</h1><hr>
+                                                    <a href="AdminHome.jsp">Accueil Admin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
                                                 </center>
                                                 
                                             </div>

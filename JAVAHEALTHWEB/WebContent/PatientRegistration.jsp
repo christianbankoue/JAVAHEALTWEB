@@ -55,11 +55,11 @@
            if(i>0)
            {
                 response.sendRedirect("PatientHome.jsp");
-                 out.println("<h1>Registration Suucessful...</h1>");
+                 out.println("<h1>Inscription réussie...</h1>");
            }
            else
            {
-               out.println("<h1>Somethong Went Wrong Try Again...</h1>");
+               out.println("<h1>Une erreur s'est produite. Réessayez...</h1>");
            }
            }
         catch(Exception e)

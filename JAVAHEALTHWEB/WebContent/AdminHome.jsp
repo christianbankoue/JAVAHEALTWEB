@@ -34,7 +34,7 @@
             </div>
 
             <ul class="list-unstyled components">
-                <p>Bienvenue dans la rubrique Administrateur</p>
+                <p>Bienvenue dans la zone Administrateur</p>
                 <li class="">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">Catalogue</a>

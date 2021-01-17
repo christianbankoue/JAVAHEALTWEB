@@ -38,7 +38,7 @@ th
 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
     <tr>
-    <th>Name</th><th>Services</th><th>Points</th><th>Doctor Nature</th><th>Preferred Hospital Location</th><th>Feedback</th><th>Feedback Date</th>
+    <th>Nom</th><th>Services</th><th>Points</th><th>Docteur</th><th>Emplacement de l'hôpital</th><th>Feedback</th><th>Date</th>
   </tr>
     <%
     while(rs.next())
@@ -64,7 +64,7 @@ th
 %>
 </table></div></div>
 <center>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+    <a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
 </center>
     </body>
 </html>

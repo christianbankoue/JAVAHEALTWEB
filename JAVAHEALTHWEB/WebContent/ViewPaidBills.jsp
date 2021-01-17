@@ -38,7 +38,7 @@ String name,dname,pid,bill,disease;
 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
 <tr>
-<th>PID</th><th>Pname</th><th>Doctor Name</th><th>Disease Name</th><th>Bill Amount</th>
+<th>PID</th><th>Pname</th><th>Nom du docteur</th><th>Nom de la maladie</th><th>prix facture</th>
 </tr>
 <%
 try
@@ -70,7 +70,7 @@ catch(Exception e)
 %>
 </table></div></div>
 <center>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+    <a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
 </center>
 </body>
 </html>

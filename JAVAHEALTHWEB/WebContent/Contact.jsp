@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -50,7 +50,7 @@
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button> -->
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -85,13 +85,13 @@
             <!-- The content half -->
             <div class="col-md-6 bg-light">
                 <div class="panel-body" style="">
-                                    <center><h3>Contact Us</h3></center><hr>
+                                    <center><h3>Nous contacter</h3></center><hr>
 
                                     <form action="ContactDao" method="post" role="form" class="contactForm lead">
                                         <div class="row">
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>User Name</label>
+                                                    <label>Nom</label>
                                                     <input type="text" name="uname" id="first_name" class="form-control input-md" required>
                                                     <div class="validation"></div>
                                                 </div>
@@ -105,21 +105,21 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Contact No.</label>
+                                                    <label>Nr téléphone</label>
                                                     <input type="number" name="phone" id="last_name" class="form-control input-md" required>
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Our Address</label>
-                                                    <textarea disabled=""  rows="3" cols="20" name="address">K.L Colony Gandhinagar Thane(East)-400603 Maharashtra.</textarea>
+                                                    <label>Notre Address</label>
+                                                    <textarea disabled=""  rows="3" cols="20" name="address">Splaiul Independentei 315, scara 1.</textarea>
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Comment</label>
+                                                    <label>Commentaire</label>
                                                     <textarea required rows="3" cols="40" name="comment"></textarea>
                                                     <div class="validation"></div>
                                                 </div>

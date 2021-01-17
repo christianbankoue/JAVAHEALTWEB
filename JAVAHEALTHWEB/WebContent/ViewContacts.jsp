@@ -37,7 +37,7 @@ String name,email,contact,comment;
 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
 <tr>
-<th>User Name</th><th>Email</th><th>Contact No.</th><th>Comment</th>
+<th>Nom</th><th>Email</th><th>Nr téléphone.</th><th>Commentaire</th>
 </tr>
 <%
 try
@@ -67,7 +67,7 @@ catch(Exception e)
 %>
 </table></div></div>
 <center>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Logout</a>
+    <a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminHome.jsp">Admin's Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
 </center>
 </body>
 </html>

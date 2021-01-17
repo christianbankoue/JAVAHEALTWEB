@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hospital Management System</title>
+    <title>Centre Hospitalier Universitaire</title>
 	
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -32,11 +32,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="ViewDoctors.jsp">Doctors</a></li>
-                                <li><a href="About.jsp">About Us</a></li>
+				<li class="active"><a href="index.html">Accueil</a></li>
+				<li><a href="ViewDoctors.jsp">Docteurs</a></li>
+                                <li><a href="About.jsp">A propos de nous</a></li>
                                 <li><a href="services.jsp">Services</a></li>
-                                <li><a href="Contact.jsp">Contact Us</a></li>	
+                                <li><a href="Contact.jsp">Nous contacter</a></li>	
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -57,20 +57,20 @@
                                              
                                             <div class="panel-body" style="">
                                                 <center><img src="images/banner.jpg" height="230px" width="510px"></center><hr>
-                                                <center><h6>Hospital Services</h6></center>
-                                                <p style="font-size: 16px;">This Hospital is active and consulting medical staff and care providers offer a broad base of primary and specialty care and services including:</p>
+                                                <center><h6>Services hospitaliers</h6></center>
+                                                <p style="font-size: 16px;">Cet hôpital dispose d'un personnel médical actif et des fournisseurs de soins offrant une large base de soins et de services primaires et spécialisés, notamment:</p>
                                     <ul style="list-style-type: circle;color: red;font-size: 16px;">                                        
-                                        <li><b>Family and internal medicine</b></li>
-                                        <li><b>Women's health.</b></li>
-                                        <li><b>Surgical services.</b></li>
-                                        <li><b>24 hour Emergency Room.</b></li>
-                                        <li><b>State-of-the-art diagnostic and lab services.</b></li>
-                                        <li><b>clinics.</b></li>
-                                        <li><b>Urology clinic.</b></li>
-                                        <li><b>Swing bed program.</b></li>
-                                        <li><b>Eye (cataract) surgery.</b></li>
-                                        <li><b>Chemotherapy.</b></li>
-                                        <li><b>Gynecology.</b></li>
+                                        <li><b>Médecine familiale.</b></li>
+                                        <li><b>Santé des femmes.</b></li>
+                                        <li><b>Services chirurgicaux.</b></li>
+                                        <li><b>Urgences 24 heures sur 24.</b></li>
+                                        <li><b>Services de diagnostic et de laboratoire de pointe.</b></li>
+                                        <li><b>cliniques.</b></li>
+                                        <li><b>Clinique d'urologie.</b></li>
+                                        <li><b>Programme de lit pivotant.</b></li>
+                                        <li><b>Chirurgie oculaire.</b></li>
+                                        <li><b>Chimiothérapie.</b></li>
+                                        <li><b>Gynécologie.</b></li>
                                     </ul>
                                             </div>
                                             

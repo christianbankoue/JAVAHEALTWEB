@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Management System</title>
+    <title>Centre Hospitalier Universitaire</title>
 	
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -35,11 +35,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="active"><a href="index.html">Accueil</a></li>
                             <li><a href="Services.jsp">Services</a></li>
-                            <li><a href="ViewDoctors.jsp">Doctors</a></li>
-                            <li><a href="About.jsp">About Us</a></li>
-                            <li><a href="Contact.jsp">Contact Us</a></li>
+                            <li><a href="ViewDoctors.jsp">Docteurs</a></li>
+                            <li><a href="About.jsp">A propos de nous</a></li>
+                            <li><a href="Contact.jsp">Nous contacter</a></li>
                         </ul>
                                     </div></li>
 			  </ul>
@@ -63,7 +63,7 @@
                                              
                                             <div class="panel-body" style="">
                                                 <center><img src="images/invalid.png" height="230px" width="510px"></center><hr>
-                                                <center><h6>Invalid login Credential Found.</h6></center>
+                                                <center><h6>Identifiant de connexion non valide.</h6></center>
                                                 
                                             </div>
                                             

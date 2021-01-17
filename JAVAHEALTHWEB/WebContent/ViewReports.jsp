@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -73,7 +73,7 @@ String name,dname,pid,bill,disease,room,gender,age,email,adate,ddate;
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button> -->
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -92,7 +92,7 @@ String name,dname,pid,bill,disease,room,gender,age,email,adate,ddate;
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             
                         </ul>
@@ -106,7 +106,7 @@ String name,dname,pid,bill,disease,room,gender,age,email,adate,ddate;
                 <div class="table-responsive"> 
 <table border="3" class="table table-striped">
 <tr>
-<th>PID</th><th>Name</th><th>Email</th><th>Gender</th><th>Age</th><th>Consultant Doctor Name</th><th>Disease Name</th><th>Room Type</th><th>Admit Date</th><th>Discharge Date</th><th>Total Bill</th>
+<th>PID</th><th>Nom</th><th>Email</th><th>Sexe</th><th>Age</th><th>Nom du docteur</th><th>Nom de la maladie</th><th>Room Type</th><th>Admit Date</th><th>Date de sortie</th><th>facture totale</th>
 </tr>
 <%
 try

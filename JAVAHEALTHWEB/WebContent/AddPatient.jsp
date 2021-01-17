@@ -66,7 +66,7 @@
                 <div class="container-fluid">
 
                     
-                    <h3>Clinique médicale</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -130,7 +130,7 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Nom du patient</label>
+	                                    <label>Nom</label>
 	                                    <input type="text" pattern="[a-zA-Z][a-zA-Z ]+[a-zA-Z]$" name="name" id="last_name"
 	                                        class="form-control input-md" required=""
 	                                        title="Patient name can not be blank and should not contain any digit.">
@@ -165,7 +165,7 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Patient DOB</label>
+	                                    <label>Date de naissance</label>
 	                                    <input type="date" name="dob" id="last_name" class="form-control input-md"
 	                                        required="">
 	                                    <div class="validation"></div>
@@ -173,7 +173,7 @@
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">
-	                                    <label>Sexe du patient</label>
+	                                    <label>Sexe</label>
 	                                    <select name="gender" class="form-control" required="">
 	                                        <option selected="" value="-1" disabled="">Selectionner le Genre</option>
 	                                        <option>Homme</option>
@@ -189,7 +189,6 @@
 	                                    <input type="number" name="age" id="last_name" class="form-control input-md"
 	                                        required="" title="Age should not contain any alaphabets.">
 	                                    <div class="validation"></div>
-	                                </div>
 	                            </div>
 	                            <div class="col-xs-6 col-sm-6 col-md-6">
 	                                <div class="form-group">

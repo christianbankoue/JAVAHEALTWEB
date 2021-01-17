@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hospital Management System</title>
+        <title>Centre Hospitalier Universitaire</title>
 
         <!-- css -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -46,11 +46,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="BookApointment.jsp">Book Appointment</a></li>
-                            <li><a href="ViewDoctors.jsp">Doctors</a></li>
-                            <li><a href="ViewReport.jsp">View Report</a></li>
-                            <li><a href="index.html">Logout</a></li>
+                            <li class="active"><a href="index.html">Accueil</a></li>
+                            <li><a href="BookApointment.jsp">prendre rendez-vous</a></li>
+                            <li><a href="ViewDoctors.jsp">Docteurs</a></li>
+                            <li><a href="ViewReport.jsp">voir Statistique</a></li>
+                            <li><a href="index.html">Deconnexion</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -71,7 +71,7 @@
                             <div class="col-lg-6">
 
                                 <div class="panel-body" style="">
-                                    <center><h3>Pay Your Bill Form</h3></center><hr>
+                                    <center><h3>Payez votre facture</h3></center><hr>
 
                                     <form action="BillProcess.jsp" method="post" role="form" class="contactForm lead">
                                         <div class="row">
@@ -87,7 +87,7 @@
                                                             st = con.createStatement();
                                                             rs = st.executeQuery("select Pid from Table_Appointment where Pname='" + name + "'");
                                                             if (!rs.next()) {
-                                                                out.println("<center><b>You have Not Fixed any Appointment with any  Doctor Therefore no bill is generated.</b></center>");
+                                                                out.println("<center><b>Vous n'avez fixé aucun rendez-vous avec un médecin, aucune facture n'est donc générée.</b></center>");
                                                             } else {
                                                                 rs = st.executeQuery("select Pid from Table_Appointment where Pname='" + name + "'");
                                                                 while (rs.next()) {
@@ -102,7 +102,7 @@
                                                                 rs = st1.executeQuery("select Pname from Table_Patient where Pid='" + id + "'");
                                                                 while (rs.next()) {
                                                                     pname = rs.getString("Pname");
-                                                                    out.println("<label>Patient Name</label>");
+                                                                    out.println("<label>Nom du patient</label>");
                                                                     out.println("<input type='text' name='pname' disabled  class='form-control input-md' value=" + name + " required>");
                                                                 }
                                                                 out.println("<div class='validation'></div></div></div><div class='col-xs-6 col-sm-6 col-md-6'><div class='form-group'>");
@@ -112,7 +112,7 @@
                                                                 rs = st2.executeQuery("select Dname from Table_Appointment where Pid='"+id+"'");
                                                                 while (rs.next()) {
                                                                     dname = rs.getString("Dname");
-                                                                    out.println("<label>Doctor Name</label>");
+                                                                    out.println("<label>Nom du docteur</label>");
                                                                     out.println("<input type='text' name='dname' disabled  class='form-control input-md' value=" + dname + " required>");
                                                                 }
                                                                 out.println("<div class='validation'></div></div></div><div class='col-xs-6 col-sm-6 col-md-6'><div class='form-group'>");
@@ -123,7 +123,7 @@
                                                                 while (rs.next()) {
                                                                     disease = rs.getString("Disease");
 
-                                                                    out.println("<label>Disease Name</label>");
+                                                                    out.println("<label>Nom de la maladie</label>");
                                                                     out.println("<input type='text' name='disease' disabled  class='form-control input-md' value=" + disease + " required>");
                                                                 }
                                                                 out.println("<div class='validation'></div></div></div><div class='col-xs-6 col-sm-6 col-md-6'><div class='form-group'>");
@@ -133,7 +133,7 @@
                                                                 rs = st4.executeQuery("select Cost from DiseaseCost where Disease_Name='" + disease + "'");
                                                                 while (rs.next()) {
                                                                     bill = rs.getString("Cost");
-                                                                    out.println("<label>Bill Amount</label>");
+                                                                    out.println("<label>Montant de la facture</label>");
                                                                     out.println("<input type='text' name='amount' disabled  class='form-control input-md' value=" + bill + " required>");
                                                                 }
                                                             }

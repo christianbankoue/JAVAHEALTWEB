@@ -62,7 +62,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +81,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
                             
                         </ul>
@@ -100,7 +100,7 @@
 							<div class="col-lg-12">
 		                                             
 							<div class="panel-body">
-		                                            <center><h3>Patient Forgot Password Form</h3></center><hr>
+		                                            <center><h3>Formulaire de mot de passe oublié</h3></center><hr>
 							
 								<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 		                                                    <img src="images/Patienticon.jpg" style="width: 190px;height: 190px;margin-bottom: 9px; align-text: center;" class="img-responsive" alt="" />
@@ -110,14 +110,14 @@
     										<div class="row">
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Patient Name</label>
+    													<label>Nom du patient</label>
                                                                                                         <input required="" type="text" title="Enter Patient Name" name="name"  class="form-control input-md">
                                                         <div class="validation"></div>
     												</div>
     											</div>
     											<div class="col-xs-6 col-sm-6 col-md-6">
     												<div class="form-group">
-    													<label>Patient Email-ID</label>
+    													<label> Email-ID du Patient</label>
                                                                                                         <input type="email" required="" name="email" id="last_name" class="form-control input-md" title="Enter your Patient Email-ID">
                                                         <div class="validation"></div>
     												</div>
@@ -125,8 +125,8 @@
     										</div>
     										<input type="submit" value="Submit" class="btn btn-skin btn-block btn-lg">
     									</form>
-		                                            <center><a href="PatientLogin.jsp">Login Here</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <a href="PatientForm.jsp">Sign Up Here</a></center>
+		                                            <center><a href="PatientLogin.jsp">Connectez-vous ici</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a href="PatientForm.jsp">Inscrivez-vous ici</a></center>
 													</div>
 									</div>	
 							</div>		
