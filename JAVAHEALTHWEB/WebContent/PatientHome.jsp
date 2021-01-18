@@ -43,7 +43,7 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="ViewProfile.jsp">Voir profil</a></li>
                 <li><a href="BookApointment.jsp">Prendre rendez-vous</a></li>
-                <li><a href="DoctorAppointment.jsp">Afficher vos rendez-vous</a></li>
+                <li><a href="PatientAppointment.jsp">Afficher vos rendez-vous</a></li>
                 <li><a href="PayBill.jsp">Payer facture</a></li>
                 <li><a href="FeedbackForm.jsp">Feedback</a></li>
 
