@@ -130,7 +130,7 @@ Class.forName("com.mysql.jdbc.Driver");
                                                     %>
 </table></div></div>
 <center>
-    <a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PatientHome.jsp">Interface patient</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
+    <a href="PatientHome.jsp">Interface patient</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">Deconnexion</a>
 </center>
 <a href="InsertReports.jsp?id=<%=pid%>&name=<%=pname%>&email=<%=email%>&gender=<%=gender%>&age=<%=age%>&dname=<%=dname%>&disease=<%=disease%>&room=<%=room%>&admit_date=<%=adate%>&discharge_date=<%=s%>&bill=<%=bill%>"></a>
 </body>

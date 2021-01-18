@@ -6,7 +6,7 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="efr">
 
 <head>
     <meta charset="utf-8">
@@ -106,7 +106,7 @@
                     <!-- Demo content-->
                     
                     <div class="container">
-                    	<h4>Créer un compte patient</h4>
+                    	<h4>Creer un compte patient</h4>
                     	<br>
                         <div class="row">
 	                    <form action="AddPProcess.jsp" method="post" role="form" class="contactForm lead">
@@ -124,7 +124,7 @@
 	                                        for(Integer randomNumber : randomNumbers){
 	                                            out.println("PID- "+randomNumber);
 	                                        }
-	                                        %>" disabled>
+	                                        %>">
 	                                    <div class="validation"></div>
 	                                </div>
 	                            </div>

@@ -26,7 +26,7 @@
                
                 <a class="navbar-brand" href="index.html">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="logo" style="border: 2px solid black; border-width: 6px; background: #dddddd; padding: 10px 40px;border-radius: 25px;" width="450" height="120" />
+                        <img src="img/logo.png" alt="logo" style="border: 2px solid black; border-width: 6px; background: #dddddd; padding: 10px 40px;border-radius: 25px;" width="450" height="120" />
                 </a>
                 
                 </a>

@@ -155,7 +155,7 @@ try
 
 </table>
 </div>
-<div class="button"><button ><a href="EditDoctor.jsp?id=<%=id%>">Éditer</a></button>&nbsp;&nbsp;&nbsp;<button ><a href="DeleteDoctor.jsp?id=<%=did%>">Supprimer</a></button></div>
+<div class="button"><button ><a href="EditDoctor.jsp?id=<%=id%>">Éditer</a></button></div>
 
 <%	
 	}

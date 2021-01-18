@@ -26,7 +26,7 @@
                
                 <a class="navbar-brand" href="index.html">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="logo" style="border: 2px solid black; border-width: 6px; background: #dddddd; padding: 10px 40px;border-radius: 25px;" width="450" height="120" />
+                        <img src="img/logo.png" alt="logo" style="border: 2px solid black; border-width: 6px; background: #dddddd; padding: 10px 40px;border-radius: 25px;" width="450" height="120" />
                 </a>
                 
                 </a>
@@ -38,8 +38,8 @@
 				<li class="active"><a href="index.html">Accueil</a></li>
 				<li><a href="Services.jsp">Service</a></li>
 				<li><a href="DoctorsList.jsp">Docteurs</a></li>
-                                <li><a href="ViewAPatients.jsp">Patient</a></li>
-                                <li><a href="About.jsp">A propos de nous</a></li>
+				<li><a href="ViewAPatients.jsp">Patient</a></li>
+                <li><a href="About.jsp">A propos de nous</a></li>
 				
                                    
 			  </ul>
@@ -64,7 +64,7 @@
                                             <div class="panel-body" style="">
                                                 <center><img src="images/doctors.jpg" width="510px"></center><hr>
                                                 <center><h1>Médecin ajouté avec succès...</h1><hr>
-                                                    <a href="AdminHome.jsp">Accueil Admin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
+                                                    <a href="AdminHome.jsp">Accueil Admin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">Deconnexion</a>
                                                 </center>
                                                 
                                             </div>

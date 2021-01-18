@@ -26,7 +26,7 @@
 
                         <a class="navbar-brand" href="index.html">
                             <a class="navbar-brand" href="index.html">
-                                <img src="images/logo.png" alt="logo" style="border: 2px solid black; border-width: 6px; background: #dddddd; padding: 10px 40px;border-radius: 25px;" width="450" height="120" />
+                                <img src="img/logo.png" alt="logo" style="border: 2px solid black; border-width: 6px; background: #dddddd; padding: 10px 40px;border-radius: 25px;" width="450" height="120" />
                             </a>
 
                         </a>
@@ -35,12 +35,12 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Accueil</a></li>
+                            <li class="active"><a href="PatientHome.jsp">Accueil</a></li>
                             <li><a href="PayBill.jsp">payer la facture</a></li>
                             <li><a href="ViewDoctors.jsp">Docteurs</a></li>
                             <li><a href="About.jsp">A propos de nous</a></li>
                             <li><a href="FeedbackForm.jsp">Feedback</a></li>
-                            <li><a href="Logout.jsp">Deconnexion</a></li>                                  
+                            <li><a href="index.html">Deconnexion</a></li>                                  
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->

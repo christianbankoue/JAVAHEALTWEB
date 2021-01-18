@@ -35,7 +35,7 @@
 				<li class="active"><a href="index.html">Accueil</a></li>
 				<li><a href="ViewDoctors.jsp">Docteurs</a></li>
                                 <li><a href="About.jsp">A propos de nous</a></li>
-                                <li><a href="services.jsp">Services</a></li>
+                                <li><a href="Services.jsp">Services</a></li>
                                 <li><a href="Contact.jsp">Nous contacter</a></li>	
             </div>
             <!-- /.navbar-collapse -->
