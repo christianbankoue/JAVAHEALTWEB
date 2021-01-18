@@ -11,27 +11,45 @@
         <title>JSP Page</title>
     </head>
     <body>
-       <%
-     try
-     {
-    	 String id=(String)session.getAttribute("pid");
-    	 String name1=(String)session.getAttribute("Pname");
-    Class.forName("com.mysql.jdbc.Driver");
-    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
-    Statement st=con.createStatement();
-    ResultSet rs=st.executeQuery("select Pname,Pid,Department,Dname,Fees,App_Date,App_Time from Table_Appointment where Pname=" +name1);//session
-    %>
+    
+    <%!
+		Connection con;
+		PreparedStatement ps;
+		Statement st;
+		ResultSet rs;
+		String dname, pid,bill,pname,name,name1,id;
+	%>
+    
+    <%
+     id=(String)session.getAttribute("pid");
+     name1=(String)session.getAttribute("pname");
+    //out.println(id+" "+name1);
+     try {
+         Class.forName("com.mysql.jdbc.Driver");
+         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement", "root", "");
+         st = con.createStatement();
+         rs = st.executeQuery("select Pname,Pid,Department,Dname,Fees,App_Date,App_Time from Table_Appointment wher Pname='"+name1+"'");
+         if(!rs.next())
+         {
+             %> 
+             <center><h1>Aucun rendez-vous n'est fixé avec vous.</h1></center>
+             <%
+         }
+         else
+         {
+         rs = st.executeQuery("select Pname,Pid,Department,Dname,Fees,App_Date,App_Time from Table_Appointment where Pname='"+name1+"'");
+         while (rs.next()) {
+            pid = rs.getString("Pid");
+            name = rs.getString("Pname");
+ %>  
     
     <table border="2">
     <tr>
     <th>Nom du patient</th><th>ID</th><th>Spécialité du docteur</th><th>Nom du docteur</th><th>Frais</th><th>Date</th><th>Heure</th>
   </tr>
     <%
-    while(rs.next())
-    {
         String s1=rs.getString("Pname");
         String s2=rs.getString("Pid");
-      
         String s4=rs.getString("Department");
         String s5=rs.getString("Dname");
         String s6=rs.getString("Fees");
@@ -44,6 +62,7 @@
     <%
     }  
       }
+    }
           catch(Exception e)
        {
            out.println(e);
