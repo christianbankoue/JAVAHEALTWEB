@@ -185,20 +185,18 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Degree</label>
+                                                    <label>Select Etude</label>
                                                     <select name="degree" required="">
-                                                        <option selected="" value="-1" disabled="">Select Degree</option>
-                                                        <option>M.B.B.S</option>
-                                                        <option>B.D.S</option>
-                                                        <option>B.P.T</option>
-                                                        <option>B.Sc Nursing</option>
-                                                        <option>B.H.M.S</option>
-                                                        <option>B.A.M.S</option>
-                                                        <option>RADIOGRAPHY</option>
-                                                        <option>B.O.T</option>
-                                                        <option>Optometry</option>
-                                                        <option>Lab Technicians</option>
-                                                        <option>B.U.M.S</option>
+                                                        <option selected="" value="-1" disabled="">Select Etude</option>
+                                                        <option>Neurologie</option>
+                                                        <option>Generaliste</option>
+                                                        <option>Dentiste</option>
+                                                        <option>Cardiologie</option>
+                                                        <option>Infectiologue</option>
+                                                        <option>Pediatrie</option>
+                                                        <option>Gynecologie</option>
+                                                        <option>Urologie</option>
+                                                        <option>Dermatologie</option>
                                                     </select>
                                                     <div class="validation"></div>
                                                 </div>
@@ -208,19 +206,16 @@
                                                     <label>Select Department</label>
                                                     <select name="Department" required="">
                                                         <option selected="" value="-1" disabled="">Select Department</option>
-                                                        <option>Dentist</option>
-                                                        <option>Cardiology</option>
-                                                        <option>Gynecologist</option>
-                                                        <option>Pathologist</option>
-                                                        <option>Radiology</option>
-                                                        <option>Neurologist</option>
-                                                        <option>Obstetrician</option>
-                                                        <option>General Physician</option>
-                                                        <option>Ayurveda</option>
-                                                        <option>ENT Specialist</option>
-                                                        <option>Homeopathy</option>
-                                                        <option>veterinary physician</option>
-                                                        <option>Demo test</option>
+   														<option>Dermatologie</option>
+                                                        <option>Urologie</option>
+                                                        <option>Pediatrie</option>
+                                                        <option>Cardiologie</option>
+                                                        <option>Dentiste</option>
+                                                        <option>Neurologie</option>
+                                                        <option>Gynecologie</option>
+                                                        <option>Infectiologie</option>
+                                                        <option>Generaliste</option>
+                                                        <option>Spécialiste ORL</option>
                                                     </select>
                                                     <div class="validation"></div>
                                                 </div>

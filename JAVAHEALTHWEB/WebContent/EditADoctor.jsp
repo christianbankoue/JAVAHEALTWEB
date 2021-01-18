@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Home</title>
+    <title>Accueil</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -91,7 +91,7 @@
                 <div class="container-fluid">
 
                     
-                    <h3>Hospital Management System</h3>
+                    <h3>Centre Hospitalier Universitaire</h3>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +101,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Services.jsp">Services</a>
@@ -110,7 +110,7 @@
                                 <a class="nav-link" href="About.jsp">À propos de Nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.jsp">Contactez Nous</a>
+                                <a class="nav-link" href="Contact.jsp">Nous Contactez</a>
                             </li>
 
                         </ul>
@@ -131,21 +131,21 @@
                     <!-- Demo content-->
                     
                     <div class="container">
-                    	<h4>Edit a Doctor Account</h4>
+                    	<h4>Creer un compte docteur</h4>
                     	<br>
                         <div class="row">
 	                    <form action="EditADoctorProcess.jsp?id=<%=id%>" method="post" role="form" class="contactForm lead">
                                         <div class="row">
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor ID</label>
+                                                    <label>ID du docteur</label>
                                                     <input type="text"  disabled="" name="did" id="first_name" class="form-control input-md"   title="Patient ID" value="<%=did%>">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor Name</label>
+                                                    <label>Nom du docteur</label>
                                                     <input type="text" required="" name="name" id="last_name" class="form-control input-md" value="<%=name%>">
                                                     <div class="validation"></div>
                                                 </div>
@@ -167,11 +167,11 @@
 
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Doctor Gender</label>
+                                                    <label>Sexe</label>
                                                     <select name="gender" required="">
-                                                        <option selected="" value="-1" disabled="">Select Gender</option>
-                                                        <option>Male</option>
-                                                        <option>Female</option>
+                                                        <option selected="" value="-1" disabled="">Select le genre</option>
+                                                        <option>Homme</option>
+                                                        <option>Femme</option>
                                                     </select>
                                                     <div class="validation"></div>
                                                 </div>
@@ -185,20 +185,18 @@
                                             </div>
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Select Degree</label>
+                                                    <label>Select Etude</label>
                                                     <select name="degree" required="">
-                                                        <option selected="" value="-1" disabled="">Select Degree</option>
-                                                        <option>M.B.B.S</option>
-                                                        <option>B.D.S</option>
-                                                        <option>B.P.T</option>
-                                                        <option>B.Sc Nursing</option>
-                                                        <option>B.H.M.S</option>
-                                                        <option>B.A.M.S</option>
-                                                        <option>RADIOGRAPHY</option>
-                                                        <option>B.O.T</option>
-                                                        <option>Optometry</option>
-                                                        <option>Lab Technicians</option>
-                                                        <option>B.U.M.S</option>
+                                                        <option selected="" value="-1" disabled="">Select Etude</option>
+                                                         <option>Neurologie</option>
+                                                        <option>Generaliste</option>
+                                                        <option>Dentiste</option>
+                                                        <option>Cardiologie</option>
+                                                        <option>Infectiologie</option>
+                                                        <option>Pediatrie</option>
+                                                        <option>Gynecologie</option>
+                                                        <option>Urologie</option>
+                                                        <option>Dermatologie</option>
                                                     </select>
                                                     <div class="validation"></div>
                                                 </div>
@@ -208,19 +206,16 @@
                                                     <label>Select Department</label>
                                                     <select name="Department" required="">
                                                         <option selected="" value="-1" disabled="">Select Department</option>
-                                                        <option>Dentist</option>
-                                                        <option>Cardiology</option>
-                                                        <option>Gynecologist</option>
-                                                        <option>Pathologist</option>
-                                                        <option>Radiology</option>
-                                                        <option>Neurologist</option>
-                                                        <option>Obstetrician</option>
-                                                        <option>General Physician</option>
-                                                        <option>Ayurveda</option>
-                                                        <option>ENT Specialist</option>
-                                                        <option>Homeopathy</option>
-                                                        <option>veterinary physician</option>
-                                                        <option>Demo test</option>
+                                                        <option>Dermatologie</option>
+                                                        <option>Urologie</option>
+                                                        <option>Pediatrie</option>
+                                                        <option>Cardiologie</option>
+                                                        <option>Dentiste</option>
+                                                        <option>Neurologie</option>
+                                                        <option>Gynecologie</option>
+                                                        <option>Infectiologie</option>
+                                                        <option>Generaliste</option>
+                                                        <option>Spécialiste ORL</option>
                                                     </select>
                                                     <div class="validation"></div>
                                                 </div>

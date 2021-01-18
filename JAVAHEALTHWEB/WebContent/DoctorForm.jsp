@@ -224,14 +224,14 @@
                                             </div>        
                                             <div class="col-xs-6 col-sm-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label>Sélectionnez une etude</label>
+                                                    <label>Select Etude</label>
                                                     <select name="degree" class="form-control">
-                                                         <option selected="" disabled="">Sélectionnez une etude</option>
+                                                         <option selected="" disabled="">Select Etude</option>
                                                         <option>Neurologie</option>
                                                         <option>Generaliste</option>
                                                         <option>Dentiste</option>
                                                         <option>Cardiologie</option>
-                                                        <option>Infectiologue</option>
+                                                        <option>Infectiologie</option>
                                                         <option>Pediatrie</option>
                                                         <option>Gynecologie</option>
                                                         <option>Urologie</option>

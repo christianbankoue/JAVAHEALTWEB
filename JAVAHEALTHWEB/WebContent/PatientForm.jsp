@@ -218,17 +218,17 @@
 	                                    <label>Sélectionnez une maladie</label>
 	                                    <select name="disease" class="form-control" required="">
 	                                        <option selected="" value="-1" disabled="">Sélectionnez une maladie</option>
-	                                        <option value="Normal Diseases">Maladies normales</option>
+	                                        <option value="Maladies normales">Maladies normales</option>
 	                                        <option value="Cancer">Cancer</option>
-	                                        <option value="Celiac Disease">Maladies cœliaques</option>
-	                                        <option value="Heart Disease">Maladies cardiaques</option>
+	                                        <option value="Maladies cœliaques">Maladies cœliaques</option>
+	                                        <option value="Maladies cardiaques">Maladies cardiaques</option>
 	                                        <option value="Crohn's & Colitis">Crohn's & Colitis</option>
-	                                        <option value="Infectious Diseases">Maladies Infectueuses</option>
-	                                        <option value="Liver Disease">Maladies du Foi</option>
-	                                        <option value="Big Diseases">Maladies graves</option>
-	                                        <option value="Private Diseases">Maladies privées</option>
-	                                        <option value="Ear, Nose and Throat Diseases">Maladies ORL</option>
-	                                        <option value="Other Diseases">Autres Maladies</option>
+	                                        <option value="Maladies Infectueuses">Maladies Infectueuses</option>
+	                                        <option value="Maladies du Foi">Maladies du Foi</option>
+	                                        <option value="Maladies graves">Maladies graves</option>
+	                                        <option value="Maladies privées">Maladies privées</option>
+	                                        <option value="Maladies de l'oreille, du nez et de la gorge">Maladies ORL</option>
+	                                        <option value="Autres Maladies">Autres Maladies</option>
 	                                    </select>
 	                                    <div class="validation"></div>
 	                                </div>
