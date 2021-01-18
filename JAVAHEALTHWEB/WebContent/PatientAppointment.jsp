@@ -15,7 +15,7 @@
      try
      {
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HotelManagement","root","");
+    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
     Statement st=con.createStatement();
     ResultSet rs=st.executeQuery("select Pname,Pid,Email,Specialization,Dname,Fees,Reg_Date,Time from Table_Appointment where ");//session
     %>
