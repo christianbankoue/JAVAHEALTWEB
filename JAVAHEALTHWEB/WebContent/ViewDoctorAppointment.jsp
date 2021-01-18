@@ -82,7 +82,7 @@ th
 
 </table></div></div>
 <center>
-    <a href="AdminHome.jsp">Tableau de bord</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Logout.jsp">Deconnexion</a>
+    <a href="DoctorHome.jsp">Acceuil docteur</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">Deconnexion</a>
 </center>
     </body>
 </html>

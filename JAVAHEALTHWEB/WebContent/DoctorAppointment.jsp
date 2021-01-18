@@ -64,10 +64,9 @@
             </div>
             <ul class="list-unstyled components">
                 
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="DoctorHome.jsp">Accueil</a></li>
                 <li><a href="DoctorProfile.jsp">Voir le profil</a></li>
                 <li><a href="DoctorAppointment.jsp">Afficher vos rendez-vous</a></li>
-                <li><a href="FeedbackForm.jsp">Feedback</a></li>
 
                 <ul class="list-unstyled CTAs">
                     <li>
@@ -129,7 +128,6 @@
 		                                                    <%
 		                                                            id=(String)session.getAttribute("did");
 		                                                            name1=(String)session.getAttribute("dname");
-		                                                           //out.println(id+" "+name1);
 		                                                            try {
 		                                                                Class.forName("com.mysql.jdbc.Driver");
 		                                                                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement", "root", "");

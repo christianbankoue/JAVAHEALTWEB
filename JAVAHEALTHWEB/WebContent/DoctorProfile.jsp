@@ -67,7 +67,6 @@
                 <li><a href="DoctorHome.jsp">Accueil</a></li>
                 <li><a href="DoctorProfile.jsp">Voir Profil</a></li>
                 <li><a href="DoctorAppointment.jsp">Voir vos rendez-vous</a></li>
-                <li><a href="FeedbackForm.jsp">Feedback</a></li>
 
                 <ul class="list-unstyled CTAs">
                     <li>
