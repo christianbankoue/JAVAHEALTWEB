@@ -14,10 +14,12 @@
        <%
      try
      {
+    	 String id=(String)session.getAttribute("pid");
+    	 String name1=(String)session.getAttribute("Pname");
     Class.forName("com.mysql.jdbc.Driver");
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
     Statement st=con.createStatement();
-    ResultSet rs=st.executeQuery("select Pname,Pid,Email,Specialization,Dname,Fees,Reg_Date,Time from Table_Appointment where ");//session
+    ResultSet rs=st.executeQuery("select Pname,Pid,Email,Specialization,Dname,Fees,Reg_Date,Time from Table_Appointment where Pname=" +name1);//session
     %>
     
     <table border="2">

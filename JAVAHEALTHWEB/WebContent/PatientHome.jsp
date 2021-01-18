@@ -40,7 +40,7 @@
             </div>
             <ul class="list-unstyled components">
                 
-                <li><a href="#">Accueil Patient</a></li>
+                <li><a href="PatientHome.jsp">Accueil Patient</a></li>
                 <li><a href="ViewProfile.jsp">Voir profil</a></li>
                 <li><a href="BookApointment.jsp">Prendre rendez-vous</a></li>
                 <li><a href="PatientAppointment.jsp">Afficher vos rendez-vous</a></li>
