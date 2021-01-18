@@ -19,28 +19,28 @@
     Class.forName("com.mysql.jdbc.Driver");
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
     Statement st=con.createStatement();
-    ResultSet rs=st.executeQuery("select Pname,Pid,Email,Specialization,Dname,Fees,Reg_Date,Time from Table_Appointment where Pname=" +name1);//session
+    ResultSet rs=st.executeQuery("select Pname,Pid,Department,Dname,Fees,App_Date,App_Time from Table_Appointment where Pname=" +name1);//session
     %>
     
     <table border="2">
     <tr>
-    <th>Nom du patient</th><th>ID</th><th>Email du Patient</th><th>Spécialité du docteur</th><th>Nom du docteur</th><th>Frais</th><th>Date</th><th>Heure</th>
+    <th>Nom du patient</th><th>ID</th><th>Spécialité du docteur</th><th>Nom du docteur</th><th>Frais</th><th>Date</th><th>Heure</th>
   </tr>
     <%
     while(rs.next())
     {
         String s1=rs.getString("Pname");
         String s2=rs.getString("Pid");
-        String s3=rs.getString("Email");
-        String s4=rs.getString("Specialization");
+      
+        String s4=rs.getString("Department");
         String s5=rs.getString("Dname");
         String s6=rs.getString("Fees");
-        String s7=rs.getString("Reg_Date");
-        String s8=rs.getString("Time");
+        String s7=rs.getString("App_Date");
+        String s8=rs.getString("App_Time");
   
     %>
     
-    <tr><td><%=s1%></td><td><%=s2%></td><td><%=s3%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%></td><td><%=s7%></td><td><%=s8%></td></tr>  
+    <tr><td><%=s1%></td><td><%=s2%></td><td><%=s4%></td><td><%=s5%></td><td><%=s6%></td><td><%=s7%></td><td><%=s8%></td></tr>  
     <%
     }  
       }
