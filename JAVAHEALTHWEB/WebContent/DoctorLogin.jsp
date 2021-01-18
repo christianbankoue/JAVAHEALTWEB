@@ -111,7 +111,7 @@
                                     </div>
                                     <button type="submit" value="Submit" class="btn btn-primary btn-skin btn-lg btn-block text-uppercase mb-2 rounded-pill shadow-sm">se connecter</button>
                                 </form>
-                                <center><a href="ForgotPassword.jsp">Mot de passe oublié?</a></center>
+                                <center><a href="ForgotPassword.jsp">Mot de passe oublié?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PatientForm.jsp">Inscrivez-vous ici</a></center>
                             </div>
                         </div>
                     </div><!-- End -->
