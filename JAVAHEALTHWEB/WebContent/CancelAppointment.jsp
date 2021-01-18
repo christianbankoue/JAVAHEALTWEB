@@ -24,8 +24,8 @@ try
 	Class.forName("com.mysql.jdbc.Driver");
 	conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/HospitalManagement","root","");
 	st=conn.createStatement();
-	int i=st.executeUpdate("update  Table_Appointment set Messsage='Appointment Cancelled' where Pid='"+id+"'");
-	response.sendRedirect("Cancelled.jsp");
+	int i=st.executeUpdate("update Table_Appointment set Messsage='Appointment Cancelled' where Pid='"+id+"'");
+	response.sendRedirect("DoctorAppointment.jsp");
 }
 catch(Exception e)
 {
